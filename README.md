@@ -4,7 +4,7 @@
 
 ###### 1. Что будет в консоли?
 
-<p>
+<code>
 function sayHi() {
   console.log(name);
   console.log(age);
@@ -13,7 +13,7 @@ function sayHi() {
 }
 
 sayHi();
-</p>
+</code>
 
 <ul>
 - A: `Lydia` и `undefined`
@@ -37,15 +37,15 @@ sayHi();
 
 ###### 2. Что будет в консоли?
 
-<p>
+<code>
 for (var i = 0; i < 3; i++) {
   setTimeout(() => console.log(i), 1);
 }
 
-for (let i = 0; i <p 3; i++) {
+for (let i = 0; i <code 3; i++) {
   setTimeout(() => console.log(i), 1);
 }
-</p>
+</code>
 
 <ul>
 - A: `0 1 2` и `0 1 2`
@@ -68,7 +68,7 @@ for (let i = 0; i <p 3; i++) {
 
 ###### 3. Что будет в консоли?
 
-<p>
+<code>
 const shape = {
   radius: 10,
   diameter() {
@@ -79,7 +79,7 @@ const shape = {
 
 shape.diameter();
 shape.perimeter();
-</p>
+</code>
 
 <ul>
 - A: `20` и `62.83185307179586`
@@ -105,10 +105,10 @@ shape.perimeter();
 
 ###### 4. Что будет в консоли?
 
-<p>
+<code>
 +true;
 !"Lydia";
-</p>
+</code>
 
 <ul>
 - A: `1` и `false`
@@ -131,7 +131,7 @@ shape.perimeter();
 
 ###### 5. Что НЕ является валидным?
 
-<p>
+<code>
 const bird = {
   size: "small"
 };
@@ -140,7 +140,7 @@ const mouse = {
   name: "Mickey",
   small: true
 };
-</p>
+</code>
 
 <ul>
 - A: `mouse.bird.size`
@@ -169,14 +169,14 @@ JavaScript интерпретирует (или распаковывает) оп
 
 ###### 6. Что будет в консоли?
 
-<p>
+<code>
 let c = { greeting: "Hey!" };
 let d;
 
 d = c;
 c.greeting = "Hello";
 console.log(d.greeting);
-</p>
+</code>
 
 <ul>
 - A: `Hello`
@@ -205,7 +205,7 @@ console.log(d.greeting);
 
 ###### 7. Что будет в консоли?
 
-<p>
+<code>
 let a = 3;
 let b = new Number(3);
 let c = 3;
@@ -213,7 +213,7 @@ let c = 3;
 console.log(a == b);
 console.log(a === b);
 console.log(b === c);
-</p>
+</code>
 
 <ul>
 - A: `true` `false` `true`
@@ -239,7 +239,7 @@ console.log(b === c);
 
 ###### 8. Каким будет результат?
 
-<p>
+<code>
 class Chameleon {
   static colorChange(newColor) {
     this.newColor = newColor;
@@ -253,7 +253,7 @@ class Chameleon {
 
 const freddie = new Chameleon({ newColor: "purple" });
 freddie.colorChange("orange");
-</p>
+</code>
 
 <ul>
 - A: `orange`
@@ -275,11 +275,11 @@ freddie.colorChange("orange");
 
 ###### 9. Что будет в консоли?
 
-<p>
+<code>
 let greeting;
 greetign = {}; // Опечатка!
 console.log(greetign);
-</p>
+</code>
 
 <ul>
 - A: `{}`
@@ -302,13 +302,13 @@ console.log(greetign);
 
 ###### 10. Что произойдет?
 
-<p>
+<code>
 function bark() {
   console.log("Woof!");
 }
 
 bark.animal = "dog";
-</p>
+</code>
 
 <ul>
 - A: Ничего, всё в порядке!
@@ -332,7 +332,7 @@ bark.animal = "dog";
 
 ###### 11. Что будет в консоли?
 
-<p>
+<code>
 function Person(firstName, lastName) {
   this.firstName = firstName;
   this.lastName = lastName;
@@ -344,7 +344,7 @@ Person.getFullName = function () {
 }
 
 console.log(member.getFullName());
-</p>
+</code>
 
 <ul>
 - A: `TypeError`
@@ -358,11 +358,11 @@ console.log(member.getFullName());
 <span>
 Нельзя добавлять свойства конструктору, как обычному объекту. Если нужно добавить фичу всем объектам, то необходимо использовать прототипы. В данном случае
 
-</p>js
+</code>js
 Person.prototype.getFullName = function () {
   return `${this.firstName} ${this.lastName}`;
 }
-</p>
+</code>
 
 сделает метод `member.getFullName()` рабочим. В чем тут преимущество? Предположим, что мы добавили этот метод к конструктору. Возможно, не каждому экземпляру `Person` нужен этот метод. Это приведет к большим потерям памяти, т.к. все экземпляры будут иметь это свойство. Напротив, если мы добавим этот метод только к прототипу, у нас будет только одно место в памяти, к которому смогут обращаться все экземпляры!
 
@@ -374,7 +374,7 @@ Person.prototype.getFullName = function () {
 
 ###### 12. Что будет в консоли?
 
-<p>
+<code>
 function Person(firstName, lastName) {
   this.firstName = firstName;
   this.lastName = lastName;
@@ -385,7 +385,7 @@ const sarah = Person("Sarah", "Smith");
 
 console.log(lydia);
 console.log(sarah);
-</p>
+</code>
 
 <ul>
 - A: `Person {firstName: "Lydia", lastName: "Hallie"}` и `undefined`
@@ -449,13 +449,13 @@ console.log(sarah);
 
 ###### 15. Каким будет результат?
 
-<p>
+<code>
 function sum(a, b) {
   return a + b;
 }
 
 sum(1, "2");
-</p>
+</code>
 
 <ul>
 - A: `NaN`
@@ -479,12 +479,12 @@ JavaScript это **динамически типизированный язык
 
 ###### 16. Что будет в консоли?
 
-<p>
+<code>
 let number = 0;
 console.log(number++);
 console.log(++number);
 console.log(number);
-</p>
+</code>
 
 <ul>
 - A: `1` `1` `2`
@@ -516,7 +516,7 @@ console.log(number);
 
 ###### 17. Что будет в консоли?
 
-<p>
+<code>
 function getPersonInfo(one, two, three) {
   console.log(one);
   console.log(two);
@@ -527,7 +527,7 @@ const person = "Lydia";
 const age = 21;
 
 getPersonInfo`${person} is ${age} years old`;
-</p>
+</code>
 
 <ul>
 - A: `"Lydia"` `21` `["", " is ", " years old"]`
@@ -548,7 +548,7 @@ getPersonInfo`${person} is ${age} years old`;
 
 ###### 18. Что будет в консоли?
 
-<p>
+<code>
 function checkAge(data) {
   if (data === { age: 18 }) {
     console.log("Ты взрослый!");
@@ -560,7 +560,7 @@ function checkAge(data) {
 }
 
 checkAge({ age: 18 });
-</p>
+</code>
 
 <ul>
 - A: `Ты взрослый!`
@@ -585,13 +585,13 @@ checkAge({ age: 18 });
 
 ###### 19. Что будет в консоли?
 
-<p>
+<code>
 function getAge(...args) {
   console.log(typeof args);
 }
 
 getAge(21);
-</p>
+</code>
 
 <ul>
 - A: `"number"`
@@ -613,7 +613,7 @@ getAge(21);
 
 ###### 20. Что будет в консоли?
 
-<p>
+<code>
 function getAge() {
   "use strict";
   age = 21;
@@ -621,7 +621,7 @@ function getAge() {
 }
 
 getAge();
-</p>
+</code>
 
 <ul>
 - A: `21`
@@ -643,9 +643,9 @@ getAge();
 
 ###### 21. Чему будет равно `sum`?
 
-<p>
+<code>
 const sum = eval("10*10+5");
-</p>
+</code>
 
 <ul>
 - A: `105`
@@ -667,9 +667,9 @@ const sum = eval("10*10+5");
 
 ###### 22. Как долго будет доступен cool_secret?
 
-<p>
+<code>
 sessionStorage.setItem("cool_secret", 123);
-</p>
+</code>
 
 <ul>
 - A: Всегда, данные не потеряются.
@@ -693,12 +693,12 @@ sessionStorage.setItem("cool_secret", 123);
 
 ###### 23. Что будет в консоли?
 
-<p>
+<code>
 var num = 8;
 var num = 10;
 
 console.log(num);
-</p>
+</code>
 
 <ul>
 - A: `8`
@@ -722,7 +722,7 @@ console.log(num);
 
 ###### 24. Каким будет результат?
 
-<p>
+<code>
 const obj = { 1: "a", 2: "b", 3: "c" };
 const set = new Set([1, 2, 3, 4, 5]);
 
@@ -730,7 +730,7 @@ obj.hasOwnProperty("1");
 obj.hasOwnProperty(1);
 set.has("1");
 set.has(1);
-</p>
+</code>
 
 <ul>
 - A: `false` `true` `false` `true`
@@ -754,10 +754,10 @@ set.has(1);
 
 ###### 25. Что будет в консоли?
 
-<p>
+<code>
 const obj = { a: "one", b: "two", a: "three" };
 console.log(obj);
-</p>
+</code>
 
 <ul>
 - A: `{ a: "one", b: "two" }`
@@ -798,12 +798,12 @@ console.log(obj);
 
 ###### 27. Что будет в консоли?
 
-<p>
-for (let i = 1; i <p 5; i++) {
+<code>
+for (let i = 1; i <code 5; i++) {
   if (i === 3) continue;
   console.log(i);
 }
-</p>
+</code>
 
 <ul>
 - A: `1` `2`
@@ -825,7 +825,7 @@ for (let i = 1; i <p 5; i++) {
 
 ###### 28. Каким будет результат?
 
-<p>
+<code>
 String.prototype.giveLydiaPizza = () => {
   return "Just give Lydia pizza already!";
 };
@@ -833,7 +833,7 @@ String.prototype.giveLydiaPizza = () => {
 const name = "Lydia";
 
 name.giveLydiaPizza();
-</p>
+</code>
 
 <ul>
 - A: `"Just give Lydia pizza already!"`
@@ -855,7 +855,7 @@ name.giveLydiaPizza();
 
 ###### 29. Что будет в консоли?
 
-<p>
+<code>
 const a = {};
 const b = { key: "b" };
 const c = { key: "c" };
@@ -864,7 +864,7 @@ a[b] = 123;
 a[c] = 456;
 
 console.log(a[b]);
-</p>
+</code>
 
 <ul>
 - A: `123`
@@ -890,7 +890,7 @@ console.log(a[b]);
 
 ###### 30. Каким будет результат?
 
-<p>
+<code>
 const foo = () => console.log("First");
 const bar = () => setTimeout(() => console.log("Second"));
 const baz = () => console.log("Third");
@@ -898,7 +898,7 @@ const baz = () => console.log("Third");
 bar();
 foo();
 baz();
-</p>
+</code>
 
 <ul>
 - A: `First` `Second` `Third`
@@ -944,7 +944,7 @@ WebAPI не может добавлять содержимое в стек ко�
 
 ###### 31. Что будет в event.target после клика на кнопку?
 
-</p>html
+</code>html
 <div onclick="console.log('first div')">
   <div onclick="console.log('second div')">
     <span onclick="console.log('button')">
@@ -952,7 +952,7 @@ WebAPI не может добавлять содержимое в стек ко�
     </span>
   </span>
 </div>
-</p>
+</code>
 
 <ul>
 - A: Внешний `div`
@@ -974,13 +974,13 @@ WebAPI не может добавлять содержимое в стек ко�
 
 ###### 32. Что будет в консоли после клика по параграфу?
 
-</p>html
+</code>html
 <div onclick="console.log('div')">
   <span onclick="console.log('p')">
     Кликни меня!
   </span>
 </div>
-</p>
+</code>
 
 <ul>
 - A: `p` `div`
@@ -1002,7 +1002,7 @@ WebAPI не может добавлять содержимое в стек ко�
 
 ###### 33. Что будет в консоли?
 
-<p>
+<code>
 const person = { name: "Lydia" };
 
 function sayHi(age) {
@@ -1011,7 +1011,7 @@ function sayHi(age) {
 
 sayHi.call(person, 21);
 sayHi.bind(person, 21);
-</p>
+</code>
 
 <ul>
 - A: `undefined is 21` `Lydia is 21`
@@ -1035,13 +1035,13 @@ sayHi.bind(person, 21);
 
 ###### 34. Каким будет результат?
 
-<p>
+<code>
 function sayHi() {
   return (() => 0)();
 }
 
 typeof sayHi();
-</p>
+</code>
 
 <ul>
 - A: `"object"`
@@ -1064,14 +1064,14 @@ typeof sayHi();
 
 ###### 35. Какие из этих значений являются "ложными"?
 
-<p>
+<code>
 0;
 new Number(0);
 ("");
 (" ");
 new Boolean(false);
 undefined;
-</p>
+</code>
 
 <ul>
 - A: `0`, `''`, `undefined`
@@ -1102,9 +1102,9 @@ undefined;
 
 ###### 36. Что будет в консоли
 
-<p>
+<code>
 console.log(typeof typeof 1);
-</p>
+</code>
 
 <ul>
 - A: `"number"`
@@ -1127,11 +1127,11 @@ console.log(typeof typeof 1);
 
 ###### 37. Что будет в консоли?
 
-<p>
+<code>
 const numbers = [1, 2, 3];
 numbers[10] = 11;
 console.log(numbers);
-</p>
+</code>
 
 <ul>
 - A: `[1, 2, 3, 7 x null, 11]`
@@ -1157,7 +1157,7 @@ console.log(numbers);
 
 ###### 38. Что будет в консоли?
 
-<p>
+<code>
 (() => {
   let x, y;
   try {
@@ -1169,7 +1169,7 @@ console.log(numbers);
   console.log(x);
   console.log(y);
 })();
-</p>
+</code>
 
 <ul>
 - A: `1` `undefined` `2`
@@ -1219,14 +1219,14 @@ console.log(numbers);
 
 ###### 40. Каким будет результат?
 
-<p>
+<code>
 [[0, 1], [2, 3]].reduce(
   (acc, cur) => {
     return acc.concat(cur);
   },
   [1, 2]
 );
-</p>
+</code>
 
 <ul>
 - A: `[0, 1, 2, 3, 1, 2]`
@@ -1250,11 +1250,11 @@ console.log(numbers);
 
 ###### 41. Каким будет результат?
 
-<p>
+<code>
 !!null;
 !!"";
 !!1;
-</p>
+</code>
 
 <ul>
 - A: `false` `true` `false`
@@ -1280,9 +1280,9 @@ console.log(numbers);
 
 ###### 42. Что возвращает метод `setInterval`?
 
-<p>
+<code>
 setInterval(() => console.log("Hi"), 1000);
-</p>
+</code>
 
 <ul>
 - A: уникальный id
@@ -1304,9 +1304,9 @@ setInterval(() => console.log("Hi"), 1000);
 
 ###### 43. Каким будет результат?
 
-<p>
+<code>
 [..."Lydia"];
-</p>
+</code>
 
 <ul>
 - A: `["L", "y", "d", "i", "a"]`
@@ -1328,7 +1328,7 @@ setInterval(() => console.log("Hi"), 1000);
 
 ###### 44. Каким будет результат?
 
-<p>
+<code>
 function* generator(i) {
   yield i;
   yield i * 2;
@@ -1338,7 +1338,7 @@ const gen = generator(10);
 
 console.log(gen.next().value);
 console.log(gen.next().value);
-</p>
+</code>
 
 <ul>
 - A: `[0, 10], [10, 20]`
@@ -1364,7 +1364,7 @@ console.log(gen.next().value);
 
 ###### 45. Каким будет результат?
 
-<p>
+<code>
 const firstPromise = new Promise((res, rej) => {
   setTimeout(res, 500, "один");
 });
@@ -1374,7 +1374,7 @@ const secondPromise = new Promise((res, rej) => {
 });
 
 Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
-</p>
+</code>
 
 <ul>
 - A: `"один"`
@@ -1396,13 +1396,13 @@ Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
 
 ###### 46. Каким будет результат?
 
-<p>
+<code>
 let person = { name: "Lydia" };
 const members = [person];
 person = null;
 
 console.log(members);
-</p>
+</code>
 
 <ul>
 - A: `null`
@@ -1436,7 +1436,7 @@ console.log(members);
 
 ###### 47. Каким будет результат?
 
-<p>
+<code>
 const person = {
   name: "Lydia",
   age: 21
@@ -1445,7 +1445,7 @@ const person = {
 for (const item in person) {
   console.log(item);
 }
-</p>
+</code>
 
 <ul>
 - A: `{ name: "Lydia" }, { age: 21 }`
@@ -1467,9 +1467,9 @@ for (const item in person) {
 
 ###### 48. Каким будет результат?
 
-<p>
+<code>
 console.log(3 + 4 + "5");
-</p>
+</code>
 
 <ul>
 - A: `"345"`
@@ -1495,9 +1495,9 @@ console.log(3 + 4 + "5");
 
 ###### 49. Какое значение `num`?
 
-<p>
+<code>
 const num = parseInt("7*6", 10);
-</p>
+</code>
 
 <ul>
 - A: `42`
@@ -1521,12 +1521,12 @@ const num = parseInt("7*6", 10);
 
 ###### 50. Каким будет результат?
 
-<p>
+<code>
 [1, 2, 3].map(num => {
   if (typeof num === "number") return;
   return num * 2;
 });
-</p>
+</code>
 
 <ul>
 - A: `[]`
@@ -1550,7 +1550,7 @@ const num = parseInt("7*6", 10);
 
 ###### 51. Каким будет результат?
 
-<p>
+<code>
 function getInfo(member, year) {
   member.name = "Lydia";
   year = 1998;
@@ -1562,7 +1562,7 @@ const birthYear = "1997";
 getInfo(person, birthYear);
 
 console.log(person, birthYear);
-</p>
+</code>
 
 <ul>
 - A: `{ name: "Lydia" }, "1997"`
@@ -1588,7 +1588,7 @@ console.log(person, birthYear);
 
 ###### 52. Каким будет результат?
 
-<p>
+<code>
 function greeting() {
   throw "Hello world!";
 }
@@ -1603,7 +1603,7 @@ function sayHi() {
 }
 
 sayHi();
-</p>
+</code>
 
 <ul>
 - A: `It worked! Hello world!`
@@ -1627,7 +1627,7 @@ sayHi();
 
 ###### 53. Каким будет результат?
 
-<p>
+<code>
 function Car() {
   this.make = "Lamborghini";
   return { make: "Maserati" };
@@ -1635,7 +1635,7 @@ function Car() {
 
 const myCar = new Car();
 console.log(myCar.make);
-</p>
+</code>
 
 <ul>
 - A: `"Lamborghini"`
@@ -1657,14 +1657,14 @@ console.log(myCar.make);
 
 ###### 54. Каким будет результат?
 
-<p>
+<code>
 (() => {
   let x = (y = 10);
 })();
 
 console.log(typeof x);
 console.log(typeof y);
-</p>
+</code>
 
 <ul>
 - A: `"undefined", "number"`
@@ -1678,10 +1678,10 @@ console.log(typeof y);
 <span>
 `let x = y = 10;` на самом деле является сокращением для:
 
-<p>
+<code>
 y = 10;
 let x = y;
-</p>
+</code>
 
 Когда мы устанавливаем `y` равным` 10`, мы фактически добавляем свойство `y` к глобальному объекту (`window` в браузере, `global` в Node). В браузере `window.y` теперь равен` 10`.
 
@@ -1697,7 +1697,7 @@ let x = y;
 
 ###### 55. Какой будет вывод?
 
-<p>
+<code>
 class Dog {
   constructor(name) {
     this.name = name;
@@ -1715,7 +1715,7 @@ pet.bark();
 delete Dog.prototype.bark;
 
 pet.bark();
-</p>
+</code>
 
 <ul>
 - A: `"Woof I am Mara"`, `TypeError`
@@ -1739,11 +1739,11 @@ pet.bark();
 
 ###### 56. Какой будет вывод?
 
-<p>
+<code>
 const set = new Set([1, 1, 2, 3, 4]);
 
 console.log(set);
-</p>
+</code>
 
 <ul>
 - A: `[1, 1, 2, 3, 4]`
@@ -1767,20 +1767,20 @@ console.log(set);
 
 ###### 57. Какой будет вывод?
 
-<p>
+<code>
 // counter.js
 let counter = 10;
 export default counter;
-</p>
+</code>
 
-<p>
+<code>
 // index.js
 import myCounter from "./counter";
 
 myCounter += 1;
 
 console.log(myCounter);
-</p>
+</code>
 
 <ul>
 - A: `10`
@@ -1804,13 +1804,13 @@ console.log(myCounter);
 
 ###### 58. Какой будет вывод?
 
-<p>
+<code>
 const name = "Lydia";
 age = 21;
 
 console.log(delete name);
 console.log(delete age);
-</p>
+</code>
 
 <ul>
 - A: `false`, `true`
@@ -1834,12 +1834,12 @@ console.log(delete age);
 
 ###### 59. Какой будет вывод?
 
-<p>
+<code>
 const numbers = [1, 2, 3, 4, 5];
 const [y] = numbers;
 
 console.log(y);
-</p>
+</code>
 
 <ul>
 - A: `[[1, 2, 3, 4, 5]]`
@@ -1853,17 +1853,17 @@ console.log(y);
 <span>
 Мы можем распаковать значения из массивов или свойств из объектов путем деструктуризации. Например:
 
-<p>
+<code>
 [a, b] = [1, 2];
-</p>
+</code>
 
 <img src="https://i.imgur.com/ADFpVop.png" width="200">
 
 Значение `a` теперь равно `1`, а значение `b` теперь равно `2`. Что мы на самом деле сделали в этом вопросе, так это:
 
-<p>
+<code>
 [y] = [1, 2, 3, 4, 5];
-</p>
+</code>
 
 <img src="https://i.imgur.com/NzGkMNk.png" width="200">
 
@@ -1877,12 +1877,12 @@ console.log(y);
 
 ###### 60. Какой будет вывод?
 
-<p>
+<code>
 const user = { name: "Lydia", age: 21 };
 const admin = { admin: true, ...user };
 
 console.log(admin);
-</p>
+</code>
 
 <ul>
 - A: `{ admin: true, user: { name: "Lydia", age: 21 } }`
@@ -1904,14 +1904,14 @@ console.log(admin);
 
 ###### 61. Какой будет вывод?
 
-<p>
+<code>
 const person = { name: "Lydia" };
 
 Object.defineProperty(person, "age", { value: 21 });
 
 console.log(person);
 console.log(Object.keys(person));
-</p>
+</code>
 
 <ul>
 - A: `{ name: "Lydia", age: 21 }`, `["name", "age"]`
@@ -1935,7 +1935,7 @@ console.log(Object.keys(person));
 
 ###### 62. Какой будет вывод?
 
-<p>
+<code>
 const settings = {
   username: "lydiahallie",
   level: 19,
@@ -1944,7 +1944,7 @@ const settings = {
 
 const data = JSON.stringify(settings, ["level", "health"]);
 console.log(data);
-</p>
+</code>
 
 <ul>
 - A: `"{"level":19, "health":90}"`
@@ -1970,7 +1970,7 @@ console.log(data);
 
 ###### 63. Какой будет вывод?
 
-<p>
+<code>
 let num = 10;
 
 const increaseNumber = () => num++;
@@ -1981,7 +1981,7 @@ const num2 = increasePassedNumber(num1);
 
 console.log(num1);
 console.log(num2);
-</p>
+</code>
 
 <ul>
 - A: `10`, `10`
@@ -2005,7 +2005,7 @@ console.log(num2);
 
 ###### 64. Какой будет вывод?
 
-<p>
+<code>
 const value = { number: 10 };
 
 const multiply = (x = { ...value }) => {
@@ -2016,7 +2016,7 @@ multiply();
 multiply();
 multiply(value);
 multiply(value);
-</p>
+</code>
 
 <ul>
 - A: `20`, `40`, `80`, `160`
@@ -2044,9 +2044,9 @@ multiply(value);
 
 ###### 65. Какой будет вывод?
 
-<p>
+<code>
 [1, 2, 3, 4].reduce((x, y) => console.log(x, y));
-</p>
+</code>
 
 <ul>
 - A: `1` `2`, `3` `3` и `6` `4`
@@ -2077,7 +2077,7 @@ multiply(value);
 
 ###### 66. С помощью какого конструктора мы можем успешно расширить класс `Dog`?
 
-<p>
+<code>
 class Dog {
   constructor(name) {
     this.name = name;
@@ -2106,7 +2106,7 @@ class Labrador extends Dog {
   }
 
 };
-</p>
+</code>
 
 <ul>
 - A: 1
@@ -2131,7 +2131,7 @@ class Labrador extends Dog {
 
 ###### 67. Какой будет вывод?
 
-<p>
+<code>
 // index.js
 console.log('running index.js');
 import { sum } from './sum.js';
@@ -2140,7 +2140,7 @@ console.log(sum(1, 2));
 // sum.js
 console.log('running sum.js');
 export const sum = (a, b) => a + b;
-</p>
+</code>
 
 <ul>
 - A: `running index.js`, `running sum.js`, `3`
@@ -2164,11 +2164,11 @@ export const sum = (a, b) => a + b;
 
 ###### 68. Какой будет вывод?
 
-<p>
+<code>
 console.log(Number(2) === Number(2))
 console.log(Boolean(false) === Boolean(false))
 console.log(Symbol('foo') === Symbol('foo'))
-</p>
+</code>
 
 <ul>
 - A: `true`, `true`, `false`
@@ -2190,11 +2190,11 @@ console.log(Symbol('foo') === Symbol('foo'))
 
 ###### 69. Какой будет вывод?
 
-<p>
+<code>
 const name = "Lydia Hallie"
 console.log(name.padStart(13))
 console.log(name.padStart(2))
-</p>
+</code>
 
 <ul>
 - A: `"Lydia Hallie"`, `"Lydia Hallie"`
@@ -2218,9 +2218,9 @@ console.log(name.padStart(2))
 
 ###### 70. Какой будет вывод?
 
-<p>
+<code>
 console.log("🥑" + "💻");
-</p>
+</code>
 
 <ul>
 - A: `"🥑💻"`
@@ -2242,7 +2242,7 @@ console.log("🥑" + "💻");
 
 ###### 71. Как мы можем вывести в лог значения, которые закомментированы после оператора console.log?
 
-<p>
+<code>
 function* startGame() {
   const answer = yield "Do you love JavaScript?";
   if (answer !== "Yes") {
@@ -2254,7 +2254,7 @@ function* startGame() {
 const game = startGame();
 console.log(/* 1 */); // Do you love JavaScript?
 console.log(/* 2 */); // JavaScript loves you back ❤️
-</p>
+</code>
 
 <ul>
 - A: `game.next("Yes").value` и `game.next().value`
@@ -2280,9 +2280,9 @@ console.log(/* 2 */); // JavaScript loves you back ❤️
 
 ###### 72. Какой будет вывод?
 
-<p>
+<code>
 console.log(String.raw`Hello\nworld`);
-</p>
+</code>
 
 <ul>
 - A: `Hello world!`
@@ -2316,14 +2316,14 @@ console.log(String.raw`Hello\nworld`);
 
 ###### 73. Какой будет вывод?
 
-<p>
+<code>
 async function getData() {
   return await Promise.resolve("I made it!");
 }
 
 const data = getData();
 console.log(data);
-</p>
+</code>
 
 <ul>
 - A: `"I made it!"`
@@ -2351,14 +2351,14 @@ console.log(data);
 
 ###### 74. Какой будет вывод?
 
-<p>
+<code>
 function addToList(item, list) {
   return list.push(item);
 }
 
 const result = addToList("apple", ["banana"]);
 console.log(result);
-</p>
+</code>
 
 <ul>
 - A: `['apple', 'banana']`
@@ -2382,7 +2382,7 @@ console.log(result);
 
 ###### 75. Какой будет вывод?
 
-<p>
+<code>
 const box = { x: 10, y: 20 };
 
 Object.freeze(box);
@@ -2391,7 +2391,7 @@ const shape = box;
 shape.x = 100;
 
 console.log(shape);
-</p>
+</code>
 
 <ul>
 - A: `{ x: 100, y: 20 }`
@@ -2417,11 +2417,11 @@ console.log(shape);
 
 ###### 76. Какой будет вывод?
 
-<p>
+<code>
 const { name: myName } = { name: "Lydia" };
 
 console.log(name);
-</p>
+</code>
 
 <ul>
 - A: `"Lydia"`
@@ -2447,11 +2447,11 @@ console.log(name);
 
 ###### 77. Это чистая функция?
 
-<p>
+<code>
 function sum(a, b) {
   return a + b;
 }
-</p>
+</code>
 
 <ul>
 - A: Да
@@ -2473,7 +2473,7 @@ function sum(a, b) {
 
 ###### 78. Какой будет вывод?
 
-<p>
+<code>
 const add = () => {
   const cache = {};
   return num => {
@@ -2491,7 +2491,7 @@ const addFunction = add();
 console.log(addFunction(10));
 console.log(addFunction(10));
 console.log(addFunction(5 * 2));
-</p>
+</code>
 
 <ul>
 - A: `Calculated! 20` `Calculated! 20` `Calculated! 20`
@@ -2521,7 +2521,7 @@ console.log(addFunction(5 * 2));
 
 ###### 79. Какой будет вывод?
 
-<p>
+<code>
 const myLifeSummedUp = ["☕", "💻", "🍷", "🍫"]
 
 for (let item in myLifeSummedUp) {
@@ -2531,7 +2531,7 @@ for (let item in myLifeSummedUp) {
 for (let item of myLifeSummedUp) {
   console.log(item)
 }
-</p>
+</code>
 
 <ul>
 - A: `0` `1` `2` `3` и `"☕"` ` "💻"` `"🍷"` `"🍫"`
@@ -2559,10 +2559,10 @@ for (let item of myLifeSummedUp) {
 
 ###### 80. Какой будет вывод?
 
-<p>
+<code>
 const list = [1 + 2, 1 * 2, 1 / 2]
 console.log(list)
-</p>
+</code>
 
 <ul>
 - A: `["1 + 2", "1 * 2", "1 / 2"]`
@@ -2586,13 +2586,13 @@ console.log(list)
 
 ###### 81. Какой будет вывод?
 
-<p>
+<code>
 function sayHi(name) {
   return `Hi there, ${name}`
 }
 
 console.log(sayHi())
-</p>
+</code>
 
 <ul>
 - A: `Hello there, `
@@ -2620,7 +2620,7 @@ console.log(sayHi())
 
 ###### 82. Какой будет вывод?
 
-<p>
+<code>
 var status = "😎"
 
 setTimeout(() => {
@@ -2636,7 +2636,7 @@ setTimeout(() => {
   console.log(data.getStatus())
   console.log(data.getStatus.call(this))
 }, 0)
-</p>
+</code>
 
 <ul>
 - A: `"🥑"` и `"😍"`
@@ -2661,7 +2661,7 @@ setTimeout(() => {
 
 ###### 83. Какой будет вывод?
 
-<p>
+<code>
 const person = {
   name: "Lydia",
   age: 21
@@ -2671,7 +2671,7 @@ let city = person.city
 city = "Amsterdam"
 
 console.log(person)
-</p>
+</code>
 
 <ul>
 - A: `{ name: "Lydia", age: 21 }`
@@ -2699,9 +2699,9 @@ console.log(person)
 
 ###### 84. Какой будет вывод?
 
-<p>
+<code>
 function checkAge(age) {
-  if (age <p 18) {
+  if (age <code 18) {
     const message = "Sorry, you're too young."
   } else {
     const message = "Yay! You're old enough!"
@@ -2711,7 +2711,7 @@ function checkAge(age) {
 }
 
 console.log(checkAge(21))
-</p>
+</code>
 
 <ul>
 - A: `"Sorry, you're too young."`
@@ -2733,11 +2733,11 @@ console.log(checkAge(21))
 
 ###### 85. Какая информация будетвыведена в лог?
 
-<p>
+<code>
 fetch('https://www.website.com/api/user/1')
   .then(res => res.json())
   .then(res => console.log(res))
-</p>
+</code>
 
 <ul>
 - A: Результат метода `fetch`.
@@ -2759,11 +2759,11 @@ fetch('https://www.website.com/api/user/1')
 
 ###### 86. Какая опция позволяет установить hasName равным `true`, если вы не можете передать`true` в качестве аргумента?
 
-<p>
+<code>
 function getName(name) {
   const hasName = //
 }
-</p>
+</code>
 
 <ul>
 - A: `!!name`
@@ -2791,9 +2791,9 @@ function getName(name) {
 
 ###### 87. Какой будет вывод?
 
-<p>
+<code>
 console.log("I want pizza"[0])
-</p>
+</code>
 
 <ul>
 - A: `"""`
@@ -2817,13 +2817,13 @@ console.log("I want pizza"[0])
 
 ###### 88. Какой будет вывод?
 
-<p>
+<code>
 function sum(num1, num2 = num1) {
   console.log(num1 + num2)
 }
 
 sum(10)
-</p>
+</code>
 
 <ul>
 - A: `NaN`
@@ -2847,7 +2847,7 @@ sum(10)
 
 ###### 89. Какой будет вывод?
 
-<p>
+<code>
 // module.js
 export default () => "Hello world"
 export const name = "Lydia"
@@ -2856,7 +2856,7 @@ export const name = "Lydia"
 import * as data from "./module"
 
 console.log(data)
-</p>
+</code>
 
 <ul>
 - A: `{ default: function default(), name: "Lydia" }`
@@ -2880,7 +2880,7 @@ console.log(data)
 
 ###### 90. Какой будет вывод?
 
-<p>
+<code>
 class Person {
   constructor(name) {
     this.name = name
@@ -2889,7 +2889,7 @@ class Person {
 
 const member = new Person("John")
 console.log(typeof member)
-</p>
+</code>
 
 <ul>
 - A: `"class"`
@@ -2903,11 +2903,11 @@ console.log(typeof member)
 <span>
 Классы являются синтаксическим сахаром для конструкторов функций. Эквивалентом класса `Person` в качестве конструктора функции будет:
 
-<p>
+<code>
 function Person() {
   this.name = name
 }
-</p>
+</code>
 
 Вызов конструктора функции с `new` приводит к созданию экземпляра `Person`, ключевое слово `typeof` возвращает `"object"` для экземпляра. `typeof member` возвращает `"object"`.
 
@@ -2919,11 +2919,11 @@ function Person() {
 
 ###### 91. Какой будет вывод?
 
-<p>
+<code>
 let newList = [1, 2, 3].push(4)
 
 console.log(newList.push(5))
-</p>
+</code>
 
 <ul>
 - A: `[1, 2, 3, 4, 5]`
@@ -2947,7 +2947,7 @@ console.log(newList.push(5))
 
 ###### 92. Какой будет вывод?
 
-<p>
+<code>
 function giveLydiaPizza() {
   return "Here is pizza!"
 }
@@ -2956,7 +2956,7 @@ const giveLydiaChocolate = () => "Here's chocolate... now go hit the gym already
 
 console.log(giveLydiaPizza.prototype)
 console.log(giveLydiaChocolate.prototype)
-</p>
+</code>
 
 <ul>
 - A: `{ constructor: ...}` `{ constructor: ...}`
@@ -2978,7 +2978,7 @@ console.log(giveLydiaChocolate.prototype)
 
 ###### 93. Какой будет вывод?
 
-<p>
+<code>
 const person = {
   name: "Lydia",
   age: 21
@@ -2987,7 +2987,7 @@ const person = {
 for (const [x, y] of Object.entries(person)) {
   console.log(x, y)
 }
-</p>
+</code>
 
 <ul>
 - A: `name` `Lydia` and `age` `21`
@@ -3016,13 +3016,13 @@ for (const [x, y] of Object.entries(person)) {
 
 ###### 94. Какой будет вывод?
 
-<p>
+<code>
 function getItems(fruitList, ...args, favoriteFruit) {
   return [...fruitList, ...args, favoriteFruit]
 }
 
 getItems(["banana", "apple"], "pear", "orange")
-</p>
+</code>
 
 <ul>
 - A: `["banana", "apple", "pear", "orange"]`
@@ -3036,13 +3036,13 @@ getItems(["banana", "apple"], "pear", "orange")
 <span>
 `... args` - прочие параметры. Значение прочих параметров - это массив, содержащий все оставшиеся аргументы **и может быть передан только последним**! В этом примере прочие параметры были вторым аргументом. Это невозможно, и это приведет к синтаксической ошибке.
 
-<p>
+<code>
 function getItems(fruitList, favoriteFruit, ...args) {
   return [...fruitList, ...args, favoriteFruit]
 }
 
 getItems(["banana", "apple"], "pear", "orange")
-</p>
+</code>
 
 Приведенный выше пример работает. Это возвращает массив `[ 'banana', 'apple', 'orange', 'pear' ]`
 </span>
@@ -3053,7 +3053,7 @@ getItems(["banana", "apple"], "pear", "orange")
 
 ###### 95. Какой будет вывод?
 
-<p>
+<code>
 function nums(a, b) {
   if
   (a > b)
@@ -3066,7 +3066,7 @@ function nums(a, b) {
 
 console.log(nums(4, 2))
 console.log(nums(1, 2))
-</p>
+</code>
 
 <ul>
 - A: `a is bigger`, `6` and `b is bigger`, `3`
@@ -3082,10 +3082,10 @@ console.log(nums(1, 2))
 
 Здесь мы написали инструкцию `return` и другое значение `a + b` в новой строке. Однако, поскольку это новая линия, движок не знает, что это на самом деле значение, которое мы хотели бы вернуть. Вместо этого он автоматически добавляет точку с запятой после `return`. Вы можете увидеть это как:
 
-<p>
+<code>
   return;
   a + b
-</p>
+</code>
 
 Это означает, что `a + b` никогда не достигается, так как функция перестает выполняться после ключевого слова `return`. Если значение не возвращается, как здесь, функция возвращает значение `undefined`. Обратите внимание, что после операторов `if / else` автоматической вставки нет!
 
@@ -3097,7 +3097,7 @@ console.log(nums(1, 2))
 
 ###### 96. Какой будет вывод?
 
-<p>
+<code>
 class Person {
   constructor() {
     this.name = "Lydia"
@@ -3112,7 +3112,7 @@ Person = class AnotherPerson {
 
 const member = new Person()
 console.log(member.name)
-</p>
+</code>
 
 <ul>
 - A: `"Lydia"`
@@ -3134,14 +3134,14 @@ console.log(member.name)
 
 ###### 97. Какой будет вывод?
 
-<p>
+<code>
 const info = {
   [Symbol('a')]: 'b'
 }
 
 console.log(info)
 console.log(Object.keys(info))
-</p>
+</code>
 
 <ul>
 - A: `{Symbol('a'): 'b'}` and `["{Symbol('a')"]`
@@ -3165,7 +3165,7 @@ console.log(Object.keys(info))
 
 ###### 98. Какой будет вывод?
 
-<p>
+<code>
 const getList = ([x, ...y]) => [x, y]
 const getUser = user => { name: user.name, age: user.age }
 
@@ -3174,7 +3174,7 @@ const user = { name: "Lydia", age: 21 }
 
 console.log(getList(list))
 console.log(getUser(user))
-</p>
+</code>
 
 <ul>
 - A: `[1, [2, 3, 4]]` and `undefined`
@@ -3194,7 +3194,7 @@ console.log(getUser(user))
 
 Функция `getUser` получает объект. В случае функций со стрелками мы не можем писать фигурные скобки, если мы просто возвращаем одно значение. Однако, если вы хотите вернуть _объект_ из стрелочной функции, вы должны написать его в скобках, в противном случае никакое значение не возвращается! Следующая функция вернула бы объект:
 
-</p>const getUser = user => ({ name: user.name, age: user.age })</p>
+</code>const getUser = user => ({ name: user.name, age: user.age })</code>
 
 Поскольку в этом случае значение не возвращается, функция возвращает значение `undefined`.
 
@@ -3206,11 +3206,11 @@ console.log(getUser(user))
 
 ###### 99. Какой будет вывод?
 
-<p>
+<code>
 const name = "Lydia"
 
 console.log(name())
-</p>
+</code>
 
 <ul>
 - A: `SyntaxError`
@@ -3237,12 +3237,12 @@ ReferenceErrors генерируется, когда JavaScript не может 
 
 ###### 100. Какое значение будет на выходе?
 
-<p>
+<code>
 // 🎉✨ This is my 100th question! ✨🎉
 
 const output = `${[] && 'Im'}possible!
 You should${'' && `n't`} see a therapist after so much JavaScript lol`
-</p>
+</code>
 
 <ul>
 - A: `possible! You should see a therapist after so much JavaScript lol`
@@ -3266,13 +3266,13 @@ You should${'' && `n't`} see a therapist after so much JavaScript lol`
 
 ###### 101. Какое значение будет на выходе?
 
-<p>
+<code>
 const one = (false || {} || null)
 const two = (null || false || "")
 const three = ([] || 0 || true)
 
 console.log(one, two, three)
-</p>
+</code>
 
 <ul>
 - A: `false` `null` `[]`
@@ -3300,7 +3300,7 @@ console.log(one, two, three)
 
 ###### 102. Какое значение будет на выходе?
 
-<p>
+<code>
 const myPromise = () => Promise.resolve('I have resolved!')
 
 function firstFunction() {
@@ -3315,7 +3315,7 @@ async function secondFunction() {
 
 firstFunction()
 secondFunction()
-</p>
+</code>
 
 <ul>
 - A: `I have resolved!`, `second` and `I have resolved!`, `second`
@@ -3345,7 +3345,7 @@ secondFunction()
 
 ###### 103. Какое значение будет на выходе?
 
-<p>
+<code>
 const set = new Set()
 
 set.add(1)
@@ -3355,7 +3355,7 @@ set.add({ name: "Lydia" })
 for (let item of set) {
   console.log(item + 2)
 }
-</p>
+</code>
 
 <ul>
 - A: `3`, `NaN`, `NaN`
@@ -3383,9 +3383,9 @@ for (let item of set) {
 
 ###### 104. Чему равно значение?
 
-<p>
+<code>
 Promise.resolve(5)
-</p>
+</code>
 
 <ul>
 - A: `5`
@@ -3409,7 +3409,7 @@ Promise.resolve(5)
 
 ###### 105. Чему равно значение?
 
-<p>
+<code>
 function compareMembers(person1, person2 = person) {
   if (person1 !== person2) {
     console.log("Not the same!")
@@ -3421,7 +3421,7 @@ function compareMembers(person1, person2 = person) {
 const person = { name: "Lydia" }
 
 compareMembers(person)
-</p>
+</code>
 
 <ul>
 - A: `Not the same!`
@@ -3449,7 +3449,7 @@ compareMembers(person)
 
 ###### 106. Чему равно значение?
 
-<p>
+<code>
 const colorConfig = {
   red: true,
   blue: false,
@@ -3461,7 +3461,7 @@ const colorConfig = {
 const colors = ["pink", "red", "blue"]
 
 console.log(colorConfig.colors[1])
-</p>
+</code>
 
 <ul>
 - A: `true`
@@ -3487,9 +3487,9 @@ JavaScript интерпретирует (или распаковывает) оп
 
 ###### 107. Чему равно значение?
 
-<p>
+<code>
 console.log('❤️' === '❤️')
-</p>
+</code>
 
 <ul>
 - A: `true`
@@ -3509,7 +3509,7 @@ console.log('❤️' === '❤️')
 
 ###### 108. Какой из этих методов модифицирует исходный массив?
 
-<p>
+<code>
 const emojis = ['✨', '🥑', '😍']
 
 emojis.map(x => x + '✨')
@@ -3518,7 +3518,7 @@ emojis.find(x => x !== '🥑')
 emojis.reduce((acc, cur) => acc + '✨')
 emojis.slice(1, 2, '✨') 
 emojis.splice(1, 2, '✨')
-</p>
+</code>
 
 <ul>
 - A: `All of them`
@@ -3542,14 +3542,14 @@ emojis.splice(1, 2, '✨')
 
 ###### <a name=20191009></a>109. Какое значение будет на выходе?
 
-<p>
+<code>
 const food = ['🍕', '🍫', '🥑', '🍔']
 const info = { favoriteFood: food[0] }
 
 info.favoriteFood = '🍝'
 
 console.log(food)
-</p>
+</code>
 
 <ul>
 - A: `['🍕', '🍫', '🥑', '🍔']`
@@ -3575,9 +3575,9 @@ console.log(food)
 
 ###### 110. Что делает этот метод?
 
-<p>
+<code>
 JSON.parse()
-</p>
+</code>
 
 <ul>
 - A: Разбирает JSON в значение JavaScript
@@ -3591,7 +3591,7 @@ JSON.parse()
 <span>
 С помощью метода `JSON.parse ()` мы можем разобрать строку JSON в значение JavaScript.
 
-<p>
+<code>
 // Преобразование числа в допустимый JSON, затем преобразование строки JSON в значение JavaScript:
 const jsonNumber = JSON.stringify(4) // '4'
 JSON.parse(jsonNumber) // 4
@@ -3603,7 +3603,7 @@ JSON.parse(jsonArray) // [1, 2, 3]
 // Преобразование объекта в допустимый JSON, затем преобразование строки JSON в значение JavaScript:
 const jsonArray = JSON.stringify({ name: "Lydia" }) // '{"name":"Lydia"}'
 JSON.parse(jsonArray) // { name: 'Lydia' }
-</p>
+</code>
 
 </span>
 </div>
@@ -3613,7 +3613,7 @@ JSON.parse(jsonArray) // { name: 'Lydia' }
 
 ###### 111. Какое значение будет на выходе? 
 
-<p>
+<code>
 let name = 'Lydia'
 
 function getName() {
@@ -3622,7 +3622,7 @@ function getName() {
 }
 
 getName()
-</p>
+</code>
 
 <ul>
 - A: Lydia
@@ -3640,7 +3640,7 @@ getName()
 
 Если бы мы не объявили переменную `name` в функции `getName`, движок javascript посмотрел бы вниз по _цепочки области действия_. Внешняя область имеет переменную с именем `name` со значением `Lydia`. В этом случае он бы записал `Lydia`.
 
-<p>
+<code>
 let name = 'Lydia'
 
 function getName() {
@@ -3648,7 +3648,7 @@ function getName() {
 }
 
 getName() // Lydia
-</p>
+</code>
 
 </span>
 </div>
@@ -3658,7 +3658,7 @@ getName() // Lydia
 
 ###### 112. Какое значение будет на выходе?
 
-<p>
+<code>
 function* generatorOne() {
   yield ['a', 'b', 'c'];
 }
@@ -3672,7 +3672,7 @@ const two = generatorTwo()
 
 console.log(one.next().value)
 console.log(two.next().value)
-</p>
+</code>
 
 <ul>
 - A: `a` and `a`
@@ -3688,19 +3688,19 @@ console.log(two.next().value)
 
 В `generatorOne` мы получаем весь массив `['a', 'b', 'c']`, используя ключевое слово `yield`. Значение свойства `value` для объекта, возвращаемого методом `next` для `one` (`one.next().value`), равно всему массиву `['a', 'b', 'c']`.
 
-<p>
+<code>
 console.log(one.next().value) // ['a', 'b', 'c']
 console.log(one.next().value) // undefined
-</p>
+</code>
 
 В файле `generatorTwo` мы используем ключевое слово `yield*`. Это означает, что первое полученное значение `two` равно первому полученному значению в итераторе. Итератор - это массив `['a', 'b', 'c']`. Первым полученным значением является `a`, поэтому в первый раз, когда мы вызываем `two.next().value`, возвращается `a`.
 
-<p>
+<code>
 console.log(two.next().value) // 'a'
 console.log(two.next().value) // 'b'
 console.log(two.next().value) // 'c'
 console.log(two.next().value) // undefined
-</p>
+</code>
 
 </span>
 </div>
@@ -3710,9 +3710,9 @@ console.log(two.next().value) // undefined
 
 ###### 113. Какое значение будет на выходе?
 
-<p>
+<code>
 console.log(`${(x => x)('I love')} to program`)
-</p>
+</code>
 
 <ul>
 - A: `I love to program`
@@ -3734,7 +3734,7 @@ console.log(`${(x => x)('I love')} to program`)
 
 ###### 114. Что произойдет?
 
-<p>
+<code>
 let config = {
   alert: setInterval(() => {
     console.log('Alert!')
@@ -3742,7 +3742,7 @@ let config = {
 }
 
 config = null
-</p>
+</code>
 
 <ul>
 - A: обратный вызов `setInterval` не будет вызван
@@ -3764,7 +3764,7 @@ config = null
 
 ###### 115. Какие методы вернут значение `'Hello world!'`?
 
-<p>
+<code>
 const myMap = new Map()
 const myFunc = () => 'greeting'
 
@@ -3776,7 +3776,7 @@ myMap.get('greeting')
 myMap.get(myFunc)
 //3
 myMap.get(() => 'greeting')
-</p>
+</code>
 
 <ul>
 - A: 1
@@ -3801,7 +3801,7 @@ myMap.get(() => 'greeting')
 
 ###### 116. Какое значение будет на выходе?
 
-<p>
+<code>
 const person = {
   name: "Lydia",
   age: 21
@@ -3817,7 +3817,7 @@ changeAge(person)
 changeAgeAndName()
 
 console.log(person)
-</p>
+</code>
 
 <ul>
 - A: `{name: "Sarah", age: 22}`
@@ -3843,11 +3843,11 @@ console.log(person)
 
 ###### <a name=20191118></a>117. Какой из следующих наборов параметров вернет `6`?
 
-<p>
+<code>
 function sumValues(x, y, z) {
 	return x + y + z;
 }
-</p>
+</code>
 
 <ul>
 - A: `sumValues([...1, 2, 3])`
@@ -3869,12 +3869,12 @@ function sumValues(x, y, z) {
 
 ###### 118. Что будет на выходе?
 
-<p>
+<code>
 let num = 1;
 const list = ["🥳", "🤠", "🥰", "🤪"];
 
 console.log(list[(num += 1)]);
-</p>
+</code>
 
 <ul>
 - A: `🤠`
@@ -3896,7 +3896,7 @@ console.log(list[(num += 1)]);
 
 ###### 119. Что будет на выходе?
 
-<p>
+<code>
 const person = {
 	firstName: "Lydia",
 	lastName: "Hallie",
@@ -3913,7 +3913,7 @@ console.log(person.pet?.name);
 console.log(person.pet?.family?.name);
 console.log(person.getFullName?.());
 console.log(member.getLastName?.());
-</p>
+</code>
 
 <ul>
 - A: `undefined` `undefined` `undefined` `undefined`
@@ -3940,7 +3940,7 @@ console.log(member.getLastName?.());
 
 ###### 120. Что будет на выходе?
 
-<p>
+<code>
 const groceries = ["banana", "apple", "peanuts"];
 
 if (groceries.indexOf("banana")) {
@@ -3948,7 +3948,7 @@ if (groceries.indexOf("banana")) {
 } else {
 	console.log(`We don't have to buy bananas!`);
 }
-</p>
+</code>
 
 <ul>
 - A: We have to buy bananas!
@@ -3970,7 +3970,7 @@ if (groceries.indexOf("banana")) {
 
 ###### 121. Что будет на выходе?
 
-<p>
+<code>
 const config = {
 	languages: [],
 	set language(lang) {
@@ -3979,7 +3979,7 @@ const config = {
 };
 
 console.log(config.language);
-</p>
+</code>
 
 <ul>
 - A: `function language(lang) { this.languages.push(lang }`
@@ -4001,12 +4001,12 @@ console.log(config.language);
 
 ###### 122. Что будет на выходе?
 
-<p>
+<code>
 const name = "Lydia Hallie";
 
 console.log(!typeof name === "object");
 console.log(!typeof name === "string");
-</p>
+</code>
 
 <ul>
 - A: `false` `true`
@@ -4030,14 +4030,14 @@ console.log(!typeof name === "string");
 
 ###### 123. Что будет на выходе?
 
-<p>
+<code>
 const add = x => y => z => {
 	console.log(x, y, z);
 	return x + y + z;
 };
 
 add(4)(5)(6);
-</p>
+</code>
 
 <ul>
 - A: `4` `5` `6`
@@ -4059,7 +4059,7 @@ add(4)(5)(6);
 
 ###### 124. Что будет на выходе?
 
-<p>
+<code>
 async function* range(start, end) {
 	for (let i = start; i <= end; i++) {
 		yield Promise.resolve(i);
@@ -4072,7 +4072,7 @@ async function* range(start, end) {
 		console.log(item);
 	}
 })();
-</p>
+</code>
 
 <ul>
 - A: `Promise {1}` `Promise {2}` `Promise {3}`
@@ -4094,13 +4094,13 @@ async function* range(start, end) {
 
 ###### 125. Что будет на выходе?
 
-<p>
+<code>
 const myFunc = ({ x, y, z }) => {
 	console.log(x, y, z);
 };
 
 myFunc(1, 2, 3);
-</p>
+</code>
 
 <ul>
 - A: `1` `2` `3`
@@ -4122,7 +4122,7 @@ myFunc(1, 2, 3);
 
 ###### 126. Что будет на выходе?
 
-<p>
+<code>
 function getFine(speed, amount) {
   const formattedSpeed = new Intl.NumberFormat({
     'en-US',
@@ -4138,7 +4138,7 @@ function getFine(speed, amount) {
 }
 
 console.log(getFine(130, 300))
-</p>
+</code>
 
 <ul>
 - A: The driver drove 130 and has to pay 300
@@ -4160,12 +4160,12 @@ console.log(getFine(130, 300))
 
 ###### 127. Что будет на выходе?
 
-<p>
+<code>
 const spookyItems = ["👻", "🎃", "🕸"];
 ({ item: spookyItems[3] } = { item: "💀" });
 
 console.log(spookyItems);
-</p>
+</code>
 
 <ul>
 - A: `["👻", "🎃", "🕸"]`
@@ -4187,7 +4187,7 @@ console.log(spookyItems);
 
 ###### 128. Что будет на выходе?
 
-<p>
+<code>
 const name = "Lydia Hallie";
 const age = 21;
 
@@ -4196,7 +4196,7 @@ console.log(Number.isNaN(age));
 
 console.log(isNaN(name));
 console.log(isNaN(age));
-</p>
+</code>
 
 <ul>
 - A: `true` `false` `true` `false`
@@ -4220,7 +4220,7 @@ console.log(isNaN(age));
 
 ###### 129. Что будет на выходе?
 
-<p>
+<code>
 const randomValue = 21;
 
 function getInfo() {
@@ -4229,7 +4229,7 @@ function getInfo() {
 }
 
 getInfo();
-</p>
+</code>
 
 <ul>
 - A: `"number"`
@@ -4251,7 +4251,7 @@ getInfo();
 
 ###### 130. Что будет на выходе?
 
-<p>
+<code>
 const myPromise = Promise.resolve("Woah some cool data");
 
 (async () => {
@@ -4263,7 +4263,7 @@ const myPromise = Promise.resolve("Woah some cool data");
 		console.log("Oh finally!");
 	}
 })();
-</p>
+</code>
 
 <ul>
 - A: `Woah some cool data`
@@ -4285,11 +4285,11 @@ const myPromise = Promise.resolve("Woah some cool data");
 
 ###### 131. Что будет на выходе?
 
-<p>
+<code>
 const emojis = ["🥑", ["✨", "✨", ["🍕", "🍕"]]];
 
 console.log(emojis.flat(1));
-</p>
+</code>
 
 <ul>
 - A: `['🥑', ['✨', '✨', ['🍕', '🍕']]]`
@@ -4311,7 +4311,7 @@ console.log(emojis.flat(1));
 
 ###### 132. Что будет на выходе?
 
-<p>
+<code>
 class Counter {
   constructor() {
     this.count = 0;
@@ -4330,7 +4330,7 @@ const counterTwo = counterOne;
 counterTwo.increment();
 
 console.log(counterOne.count);
-</p>
+</code>
 
 <ul>
 - A: `0`
@@ -4360,7 +4360,7 @@ console.log(counterOne.count);
 
 ###### 133. Что будет на выходе?
 
-<p>
+<code>
 const myPromise = Promise.resolve(Promise.resolve('Promise!'));
 
 function funcOne() {
@@ -4378,7 +4378,7 @@ async function funcTwo() {
 
 funcOne();
 funcTwo();
-</p>
+</code>
 
 <ul>
 - A: `Promise! Last line! Promise! Last line! Last line! Promise!`
@@ -4408,7 +4408,7 @@ funcTwo();
 
 ###### 134. Как мы можем вызвать функцию `sum` в `sum.js` из `index.js?`
 
-<p>
+<code>
 // sum.js
 export default function sum(x) {
   return x + x;
@@ -4416,7 +4416,7 @@ export default function sum(x) {
 
 // index.js
 import * as sum from './sum';
-</p>
+</code>
 
 <ul>
 - A: `sum(4)`
@@ -4430,7 +4430,7 @@ import * as sum from './sum';
 <span>
 Используя звездочку `*`, мы импортируем все экспортируемые значения из файла, включая именнованные экспорты и экспорты по умолчанию. Если бы у нас был следующий файл:
 
-<p>
+<code>
 // info.js
 export const name = 'Lydia';
 export const age = 21;
@@ -4439,23 +4439,23 @@ export default 'I love JavaScript';
 // index.js
 import * as info from './info';
 console.log(info);
-</p>
+</code>
 
 В лог попадёт следующее:
 
-<p>
+<code>
 {
   default: "I love JavaScript",
   name: "Lydia",
   age: 21
 }
-</p>
+</code>
 
 Для примера `sum` это означает, что импортированное значение `sum` будет таким:
 
-<p>
+<code>
 { default: function sum(x) { return x + x } }
-</p>
+</code>
 
 Следовательно, мы можем вызвать эту функцию используя `sum.default`
 
@@ -4467,7 +4467,7 @@ console.log(info);
 
 ###### 135. Что будет на выходе?
 
-<p>
+<code>
 const handler = {
   set: () => console.log('Added a new property!'),
   get: () => console.log('Accessed a property!'),
@@ -4477,7 +4477,7 @@ const person = new Proxy({}, handler);
 
 person.name = 'Lydia';
 person.name;
-</p>
+</code>
 
 <ul>
 - A: `Added a new property!`
@@ -4505,11 +4505,11 @@ C помощью Proxy мы можем добавить собственное �
 
 ###### 136. Какое из перечисленных действий может модифицировать объект `person`?
 
-<p>
+<code>
 const person = { name: 'Lydia Hallie' };
 
 Object.seal(person);
-</p>
+</code>
 
 <ul>
 - A: `person.name = "Evan Bacon"`
@@ -4533,7 +4533,7 @@ Object.seal(person);
 
 ###### 137. Какое из перечисленных действий может модифицировать объект `person`?
 
-<p>
+<code>
 const person = {
   name: 'Lydia Hallie',
   address: {
@@ -4542,7 +4542,7 @@ const person = {
 };
 
 Object.freeze(person);
-</p>
+</code>
 
 <ul>
 - A: `person.name = "Evan Bacon"`
