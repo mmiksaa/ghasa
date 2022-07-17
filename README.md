@@ -15,12 +15,12 @@ function sayHi() {
 sayHi();
 </code>
 
-<ul>
+
 - A: `Lydia` и `undefined`
 - B: `Lydia` и `ReferenceError`
 - C: `ReferenceError` и `21`
 - D: `undefined` и `ReferenceError`
-</ul>
+
 
 #### Ответ: D
 
@@ -47,11 +47,11 @@ for (let i = 0; i <code 3; i++) {
 }
 </code>
 
-<ul>
+
 - A: `0 1 2` и `0 1 2`
 - B: `0 1 2` и `3 3 3`
 - C: `3 3 3` и `0 1 2`
-</ul>
+
 
 #### Ответ: C
 
@@ -81,12 +81,12 @@ shape.diameter();
 shape.perimeter();
 </code>
 
-<ul>
+
 - A: `20` и `62.83185307179586`
 - B: `20` и `NaN`
 - C: `20` и `63`
 - D: `NaN` и `63`
-</ul>
+
 
 #### Ответ: B
 
@@ -110,11 +110,11 @@ shape.perimeter();
 !"Lydia";
 </code>
 
-<ul>
+
 - A: `1` и `false`
 - B: `false` и `NaN`
 - C: `false` и `false`
-</ul>
+
 
 #### Ответ: A
 
@@ -142,12 +142,12 @@ const mouse = {
 };
 </code>
 
-<ul>
+
 - A: `mouse.bird.size`
 - B: `mouse[bird.size]`
 - C: `mouse[bird["size"]]`
 - D: Все варианты валидны
-</ul>
+
 
 #### Ответ: A
 
@@ -178,13 +178,13 @@ c.greeting = "Hello";
 console.log(d.greeting);
 </code>
 
-<ul>
+
 - A: `Hello`
 - B: `Hey!`
 - C: `undefined`
 - D: `ReferenceError`
 - E: `TypeError`
-</ul>
+
 
 #### Ответ: A
 
@@ -215,12 +215,12 @@ console.log(a === b);
 console.log(b === c);
 </code>
 
-<ul>
+
 - A: `true` `false` `true`
 - B: `false` `false` `true`
 - C: `true` `false` `false`
 - D: `false` `true` `true`
-</ul>
+
 
 #### Ответ: C
 
@@ -255,12 +255,12 @@ const freddie = new Chameleon({ newColor: "purple" });
 freddie.colorChange("orange");
 </code>
 
-<ul>
+
 - A: `orange`
 - B: `purple`
 - C: `green`
 - D: `TypeError`
-</ul>
+
 
 #### Ответ: D
 
@@ -281,11 +281,11 @@ greetign = {}; // Опечатка!
 console.log(greetign);
 </code>
 
-<ul>
+
 - A: `{}`
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
-</ul>
+
 
 #### Ответ: A
 
@@ -310,12 +310,12 @@ function bark() {
 bark.animal = "dog";
 </code>
 
-<ul>
+
 - A: Ничего, всё в порядке!
 - B: `SyntaxError`. Нельзя добавлять свойства функциям таким способом.
 - C: `undefined`
 - D: `ReferenceError`
-</ul>
+
 
 #### Ответ: A
 
@@ -346,12 +346,12 @@ Person.getFullName = function () {
 console.log(member.getFullName());
 </code>
 
-<ul>
+
 - A: `TypeError`
 - B: `SyntaxError`
 - C: `Lydia Hallie`
 - D: `undefined` `undefined`
-</ul>
+
 
 #### Ответ: A
 
@@ -387,12 +387,12 @@ console.log(lydia);
 console.log(sarah);
 </code>
 
-<ul>
+
 - A: `Person {firstName: "Lydia", lastName: "Hallie"}` и `undefined`
 - B: `Person {firstName: "Lydia", lastName: "Hallie"}` и `Person {firstName: "Sarah", lastName: "Smith"}`
 - C: `Person {firstName: "Lydia", lastName: "Hallie"}` и `{}`
 - D:`Person {firstName: "Lydia", lastName: "Hallie"}` и `ReferenceError`
-</ul>
+
 
 #### Ответ: A
 
@@ -409,12 +409,12 @@ console.log(sarah);
 
 ###### 13. Назовите три фазы распространения событий
 
-<ul>
+
 - A: Цель > Захват > Всплытие
 - B: Всплытие > Цель > Захват
 - C: Цель > Всплытие > Захват
 - D: Захват > Цель > Всплытие
-</ul>
+
 
 #### Ответ: D
 
@@ -431,10 +431,10 @@ console.log(sarah);
 
 ###### 14. Все объекты имеют прототипы
 
-<ul>
+
 - A: Да
 - B: Нет
-</ul>
+
 
 #### Ответ: B
 
@@ -457,12 +457,12 @@ function sum(a, b) {
 sum(1, "2");
 </code>
 
-<ul>
+
 - A: `NaN`
 - B: `TypeError`
 - C: `"12"`
 - D: `3`
-</ul>
+
 
 #### Ответ: C
 
@@ -486,12 +486,12 @@ console.log(++number);
 console.log(number);
 </code>
 
-<ul>
+
 - A: `1` `1` `2`
 - B: `1` `2` `2`
 - C: `0` `2` `2`
 - D: `0` `1` `2`
-</ul>
+
 
 #### Ответ: C
 
@@ -529,11 +529,11 @@ const age = 21;
 getPersonInfo`${person} is ${age} years old`;
 </code>
 
-<ul>
+
 - A: `"Lydia"` `21` `["", " is ", " years old"]`
 - B: `["", " is ", " years old"]` `"Lydia"` `21`
 - C: `"Lydia"` `["", " is ", " years old"]` `21`
-</ul>
+
 
 #### Ответ: B
 
@@ -562,11 +562,11 @@ function checkAge(data) {
 checkAge({ age: 18 });
 </code>
 
-<ul>
+
 - A: `Ты взрослый!`
 - B: `Ты все еще взрослый.`
 - C: `Хмм.. Кажется, у тебя нет возраста.`
-</ul>
+
 
 #### Ответ: C
 
@@ -593,12 +593,12 @@ function getAge(...args) {
 getAge(21);
 </code>
 
-<ul>
+
 - A: `"number"`
 - B: `"array"`
 - C: `"object"`
 - D: `"NaN"`
-</ul>
+
 
 #### Ответ: C
 
@@ -623,12 +623,12 @@ function getAge() {
 getAge();
 </code>
 
-<ul>
+
 - A: `21`
 - B: `undefined`
 - C: `ReferenceError`
 - D: `TypeError`
-</ul>
+
 
 #### Ответ: C
 
@@ -647,12 +647,12 @@ getAge();
 const sum = eval("10*10+5");
 </code>
 
-<ul>
+
 - A: `105`
 - B: `"105"`
 - C: `TypeError`
 - D: `"10*10+5"`
-</ul>
+
 
 #### Ответ: A
 
@@ -671,12 +671,12 @@ const sum = eval("10*10+5");
 sessionStorage.setItem("cool_secret", 123);
 </code>
 
-<ul>
+
 - A: Всегда, данные не потеряются.
 - B: Пока пользователь не закроет вкладку.
 - C: Пока пользователь не закроет браузер, а не только вкладку.
 - D: Пока пользователь не выключит компьютер.
-</ul>
+
 
 #### Ответ: B
 
@@ -700,12 +700,12 @@ var num = 10;
 console.log(num);
 </code>
 
-<ul>
+
 - A: `8`
 - B: `10`
 - C: `SyntaxError`
 - D: `ReferenceError`
-</ul>
+
 
 #### Ответ: B
 
@@ -732,12 +732,12 @@ set.has("1");
 set.has(1);
 </code>
 
-<ul>
+
 - A: `false` `true` `false` `true`
 - B: `false` `true` `true` `true`
 - C: `true` `true` `false` `true`
 - D: `true` `true` `true` `true`
-</ul>
+
 
 #### Ответ: C
 
@@ -759,12 +759,12 @@ const obj = { a: "one", b: "two", a: "three" };
 console.log(obj);
 </code>
 
-<ul>
+
 - A: `{ a: "one", b: "two" }`
 - B: `{ b: "two", a: "three" }`
 - C: `{ a: "three", b: "two" }`
 - D: `SyntaxError`
-</ul>
+
 
 #### Ответ: C
 
@@ -779,11 +779,11 @@ console.log(obj);
 
 ###### 26. Глобальный контекст исполнения создает две вещи: глобальный объект и `this`
 
-<ul>
+
 - A: Да
 - B: Нет
 - C: Это зависит
-</ul>
+
 
 #### Ответ: A
 
@@ -805,12 +805,12 @@ for (let i = 1; i <code 5; i++) {
 }
 </code>
 
-<ul>
+
 - A: `1` `2`
 - B: `1` `2` `3`
 - C: `1` `2` `4`
 - D: `1` `3` `4`
-</ul>
+
 
 #### Ответ: C
 
@@ -835,12 +835,12 @@ const name = "Lydia";
 name.giveLydiaPizza();
 </code>
 
-<ul>
+
 - A: `"Just give Lydia pizza already!"`
 - B: `TypeError: not a function`
 - C: `SyntaxError`
 - D: `undefined`
-</ul>
+
 
 #### Ответ: A
 
@@ -866,12 +866,12 @@ a[c] = 456;
 console.log(a[b]);
 </code>
 
-<ul>
+
 - A: `123`
 - B: `456`
 - C: `undefined`
 - D: `ReferenceError`
-</ul>
+
 
 #### Ответ: B
 
@@ -900,12 +900,12 @@ foo();
 baz();
 </code>
 
-<ul>
+
 - A: `First` `Second` `Third`
 - B: `First` `Third` `Second`
 - C: `Second` `First` `Third`
 - D: `Second` `Third` `First`
-</ul>
+
 
 #### Ответ: B
 
@@ -954,12 +954,12 @@ WebAPI не может добавлять содержимое в стек ко�
 </div>
 </code>
 
-<ul>
+
 - A: Внешний `div`
 - B: Внутренний `div`
 - C: `button`
 - D: Массив со всеми вложенными элементами
-</ul>
+
 
 #### Ответ: C
 
@@ -982,12 +982,12 @@ WebAPI не может добавлять содержимое в стек ко�
 </div>
 </code>
 
-<ul>
+
 - A: `p` `div`
 - B: `div` `p`
 - C: `p`
 - D: `div`
-</ul>
+
 
 #### Ответ: A
 
@@ -1013,12 +1013,12 @@ sayHi.call(person, 21);
 sayHi.bind(person, 21);
 </code>
 
-<ul>
+
 - A: `undefined is 21` `Lydia is 21`
 - B: `function` `function`
 - C: `Lydia is 21` `Lydia is 21`
 - D: `Lydia is 21` `function`
-</ul>
+
 
 #### Ответ: D
 
@@ -1043,12 +1043,12 @@ function sayHi() {
 typeof sayHi();
 </code>
 
-<ul>
+
 - A: `"object"`
 - B: `"number"`
 - C: `"function"`
 - D: `"undefined"`
-</ul>
+
 
 #### Ответ: B
 
@@ -1073,12 +1073,12 @@ new Boolean(false);
 undefined;
 </code>
 
-<ul>
+
 - A: `0`, `''`, `undefined`
 - B: `0`, `new Number(0)`, `''`, `new Boolean(false)`, `undefined`
 - C: `0`, `''`, `new Boolean(false)`, `undefined`
 - D: Все являются "ложными"
-</ul>
+
 
 #### Ответ: A
 
@@ -1106,12 +1106,12 @@ undefined;
 console.log(typeof typeof 1);
 </code>
 
-<ul>
+
 - A: `"number"`
 - B: `"string"`
 - C: `"object"`
 - D: `"undefined"`
-</ul>
+
 
 #### Ответ: B
 
@@ -1133,12 +1133,12 @@ numbers[10] = 11;
 console.log(numbers);
 </code>
 
-<ul>
+
 - A: `[1, 2, 3, 7 x null, 11]`
 - B: `[1, 2, 3, 11]`
 - C: `[1, 2, 3, 7 x empty, 11]`
 - D: `SyntaxError`
-</ul>
+
 
 #### Ответ: C
 
@@ -1171,12 +1171,12 @@ console.log(numbers);
 })();
 </code>
 
-<ul>
+
 - A: `1` `undefined` `2`
 - B: `undefined` `undefined` `undefined`
 - C: `1` `1` `2`
 - D: `1` `undefined` `undefined`
-</ul>
+
 
 #### Ответ: A
 
@@ -1195,12 +1195,12 @@ console.log(numbers);
 
 ###### 39. Всё в JavaScript это
 
-<ul>
+
 - A: примитив или объект
 - B: функция или объект
 - C: вопрос с подвохом! только объекты
 - D: число или объект
-</ul>
+
 
 #### Ответ: A
 
@@ -1228,12 +1228,12 @@ console.log(numbers);
 );
 </code>
 
-<ul>
+
 - A: `[0, 1, 2, 3, 1, 2]`
 - B: `[6, 1, 2]`
 - C: `[1, 2, 0, 1, 2, 3]`
 - D: `[1, 2, 6]`
-</ul>
+
 
 #### Ответ: C
 
@@ -1256,12 +1256,12 @@ console.log(numbers);
 !!1;
 </code>
 
-<ul>
+
 - A: `false` `true` `false`
 - B: `false` `false` `true`
 - C: `false` `true` `true`
 - D: `true` `true` `false`
-</ul>
+
 
 #### Ответ: B
 
@@ -1284,12 +1284,12 @@ console.log(numbers);
 setInterval(() => console.log("Hi"), 1000);
 </code>
 
-<ul>
+
 - A: уникальный id
 - B: указанное количество миллисекунд
 - C: переданную функцию
 - D: `undefined`
-</ul>
+
 
 #### Ответ: A
 
@@ -1308,12 +1308,12 @@ setInterval(() => console.log("Hi"), 1000);
 [..."Lydia"];
 </code>
 
-<ul>
+
 - A: `["L", "y", "d", "i", "a"]`
 - B: `["Lydia"]`
 - C: `[[], "Lydia"]`
 - D: `[["L", "y", "d", "i", "a"]]`
-</ul>
+
 
 #### Ответ: A
 
@@ -1340,12 +1340,12 @@ console.log(gen.next().value);
 console.log(gen.next().value);
 </code>
 
-<ul>
+
 - A: `[0, 10], [10, 20]`
 - B: `20, 20`
 - C: `10, 20`
 - D: `0, 10 and 10, 20`
-</ul>
+
 
 #### Ответ: C
 
@@ -1376,12 +1376,12 @@ const secondPromise = new Promise((res, rej) => {
 Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
 </code>
 
-<ul>
+
 - A: `"один"`
 - B: `"два"`
 - C: `"два" "один"`
 - D: `"один" "два"`
-</ul>
+
 
 #### Ответ: B
 
@@ -1404,12 +1404,12 @@ person = null;
 console.log(members);
 </code>
 
-<ul>
+
 - A: `null`
 - B: `[null]`
 - C: `[{}]`
 - D: `[{ name: "Lydia" }]`
-</ul>
+
 
 #### Ответ: D
 
@@ -1447,12 +1447,12 @@ for (const item in person) {
 }
 </code>
 
-<ul>
+
 - A: `{ name: "Lydia" }, { age: 21 }`
 - B: `"name", "age"`
 - C: `"Lydia", 21`
 - D: `["name", "Lydia"], ["age", 21]`
-</ul>
+
 
 #### Ответ: B
 
@@ -1471,12 +1471,12 @@ for (const item in person) {
 console.log(3 + 4 + "5");
 </code>
 
-<ul>
+
 - A: `"345"`
 - B: `"75"`
 - C: `12`
 - D: `"12"`
-</ul>
+
 
 #### Ответ: B
 
@@ -1499,12 +1499,12 @@ console.log(3 + 4 + "5");
 const num = parseInt("7*6", 10);
 </code>
 
-<ul>
+
 - A: `42`
 - B: `"42"`
 - C: `7`
 - D: `NaN`
-</ul>
+
 
 #### Ответ: C
 
@@ -1528,12 +1528,12 @@ const num = parseInt("7*6", 10);
 });
 </code>
 
-<ul>
+
 - A: `[]`
 - B: `[null, null, null]`
 - C: `[undefined, undefined, undefined]`
 - D: `[ 3 x empty ]`
-</ul>
+
 
 #### Ответ: C
 
@@ -1564,12 +1564,12 @@ getInfo(person, birthYear);
 console.log(person, birthYear);
 </code>
 
-<ul>
+
 - A: `{ name: "Lydia" }, "1997"`
 - B: `{ name: "Sarah" }, "1998"`
 - C: `{ name: "Lydia" }, "1998"`
 - D: `{ name: "Sarah" }, "1997"`
-</ul>
+
 
 #### Ответ: A
 
@@ -1605,12 +1605,12 @@ function sayHi() {
 sayHi();
 </code>
 
-<ul>
+
 - A: `It worked! Hello world!`
 - B: `Oh no an error: undefined`
 - C: `SyntaxError: can only throw Error objects`
 - D: `Oh no an error: Hello world!`
-</ul>
+
 
 #### Ответ: D
 
@@ -1637,12 +1637,12 @@ const myCar = new Car();
 console.log(myCar.make);
 </code>
 
-<ul>
+
 - A: `"Lamborghini"`
 - B: `"Maserati"`
 - C: `ReferenceError`
 - D: `TypeError`
-</ul>
+
 
 #### Ответ: B
 
@@ -1666,12 +1666,12 @@ console.log(typeof x);
 console.log(typeof y);
 </code>
 
-<ul>
+
 - A: `"undefined", "number"`
 - B: `"number", "number"`
 - C: `"object", "number"`
 - D: `"number", "undefined"`
-</ul>
+
 
 #### Ответ: A
 
@@ -1717,12 +1717,12 @@ delete Dog.prototype.bark;
 pet.bark();
 </code>
 
-<ul>
+
 - A: `"Woof I am Mara"`, `TypeError`
 - B: `"Woof I am Mara"`, `"Woof I am Mara"`
 - C: `"Woof I am Mara"`, `undefined`
 - D: `TypeError`, `TypeError`
-</ul>
+
 
 #### Ответ: A
 
@@ -1745,12 +1745,12 @@ const set = new Set([1, 1, 2, 3, 4]);
 console.log(set);
 </code>
 
-<ul>
+
 - A: `[1, 1, 2, 3, 4]`
 - B: `[1, 2, 3, 4]`
 - C: `{1, 1, 2, 3, 4}`
 - D: `{1, 2, 3, 4}`
-</ul>
+
 
 #### Ответ: D
 
@@ -1782,12 +1782,12 @@ myCounter += 1;
 console.log(myCounter);
 </code>
 
-<ul>
+
 - A: `10`
 - B: `11`
 - C: `Error`
 - D: `NaN`
-</ul>
+
 
 #### Ответ: C
 
@@ -1812,12 +1812,12 @@ console.log(delete name);
 console.log(delete age);
 </code>
 
-<ul>
+
 - A: `false`, `true`
 - B: `"Lydia"`, `21`
 - C: `true`, `true`
 - D: `undefined`, `undefined`
-</ul>
+
 
 #### Ответ: A
 
@@ -1841,12 +1841,12 @@ const [y] = numbers;
 console.log(y);
 </code>
 
-<ul>
+
 - A: `[[1, 2, 3, 4, 5]]`
 - B: `[1, 2, 3, 4, 5]`
 - C: `1`
 - D: `[1]`
-</ul>
+
 
 #### Ответ: C
 
@@ -1884,12 +1884,12 @@ const admin = { admin: true, ...user };
 console.log(admin);
 </code>
 
-<ul>
+
 - A: `{ admin: true, user: { name: "Lydia", age: 21 } }`
 - B: `{ admin: true, name: "Lydia", age: 21 }`
 - C: `{ admin: true, user: ["Lydia", 21] }`
 - D: `{ admin: true }`
-</ul>
+
 
 #### Ответ: B
 
@@ -1913,12 +1913,12 @@ console.log(person);
 console.log(Object.keys(person));
 </code>
 
-<ul>
+
 - A: `{ name: "Lydia", age: 21 }`, `["name", "age"]`
 - B: `{ name: "Lydia", age: 21 }`, `["name"]`
 - C: `{ name: "Lydia"}`, `["name", "age"]`
 - D: `{ name: "Lydia"}`, `["age"]`
-</ul>
+
 
 #### Ответ: B
 
@@ -1946,12 +1946,12 @@ const data = JSON.stringify(settings, ["level", "health"]);
 console.log(data);
 </code>
 
-<ul>
+
 - A: `"{"level":19, "health":90}"`
 - B: `"{"username": "lydiahallie"}"`
 - C: `"["level", "health"]"`
 - D: `"{"username": "lydiahallie", "level":19, "health":90}"`
-</ul>
+
 
 #### Ответ: A
 
@@ -1983,12 +1983,12 @@ console.log(num1);
 console.log(num2);
 </code>
 
-<ul>
+
 - A: `10`, `10`
 - B: `10`, `11`
 - C: `11`, `11`
 - D: `11`, `12`
-</ul>
+
 
 #### Ответ: A
 
@@ -2018,12 +2018,12 @@ multiply(value);
 multiply(value);
 </code>
 
-<ul>
+
 - A: `20`, `40`, `80`, `160`
 - B: `20`, `40`, `20`, `40`
 - C: `20`, `20`, `20`, `40`
 - D: `NaN`, `NaN`, `20`, `40`
-</ul>
+
 
 #### Ответ: C
 
@@ -2048,12 +2048,12 @@ multiply(value);
 [1, 2, 3, 4].reduce((x, y) => console.log(x, y));
 </code>
 
-<ul>
+
 - A: `1` `2`, `3` `3` и `6` `4`
 - B: `1` `2`, `2` `3` и `3` `4`
 - C: `1` `undefined`, `2` `undefined`, `3` `undefined` и `4` `undefined`
 - D: `1` `2`, `undefined` `3` и `undefined` `4`
-</ul>
+
 
 #### Ответ: D
 
@@ -2108,12 +2108,12 @@ class Labrador extends Dog {
 };
 </code>
 
-<ul>
+
 - A: 1
 - B: 2
 - C: 3
 - D: 4
-</ul>
+
 
 #### Ответ: B
 
@@ -2142,12 +2142,12 @@ console.log('running sum.js');
 export const sum = (a, b) => a + b;
 </code>
 
-<ul>
+
 - A: `running index.js`, `running sum.js`, `3`
 - B: `running sum.js`, `running index.js`, `3`
 - C: `running sum.js`, `3`, `running index.js`
 - D: `running index.js`, `undefined`, `running sum.js`
-</ul>
+
 
 #### Ответ: B
 
@@ -2170,12 +2170,12 @@ console.log(Boolean(false) === Boolean(false))
 console.log(Symbol('foo') === Symbol('foo'))
 </code>
 
-<ul>
+
 - A: `true`, `true`, `false`
 - B: `false`, `true`, `false`
 - C: `true`, `false`, `true`
 - D: `true`, `true`, `true`
-</ul>
+
 
 #### Ответ: A
 
@@ -2196,12 +2196,12 @@ console.log(name.padStart(13))
 console.log(name.padStart(2))
 </code>
 
-<ul>
+
 - A: `"Lydia Hallie"`, `"Lydia Hallie"`
 - B: `"           Lydia Hallie"`, `"  Lydia Hallie"` (`"[13x whitespace]Lydia Hallie"`, `"[2x whitespace]Lydia Hallie"`)
 - C: `" Lydia Hallie"`, `"Lydia Hallie"` (`"[1x whitespace]Lydia Hallie"`, `"Lydia Hallie"`)
 - D: `"Lydia Hallie"`, `"Lyd"`,
-</ul>
+
 
 #### Ответ: C
 
@@ -2222,12 +2222,12 @@ console.log(name.padStart(2))
 console.log("🥑" + "💻");
 </code>
 
-<ul>
+
 - A: `"🥑💻"`
 - B: `257548`
 - C: Строка, содержащая кодовые обозначения
 - D: Error
-</ul>
+
 
 #### Ответ: A
 
@@ -2256,12 +2256,12 @@ console.log(/* 1 */); // Do you love JavaScript?
 console.log(/* 2 */); // JavaScript loves you back ❤️
 </code>
 
-<ul>
+
 - A: `game.next("Yes").value` и `game.next().value`
 - B: `game.next.value("Yes")` и `game.next.value()`
 - C: `game.next().value` и `game.next("Yes").value`
 - D: `game.next.value()` и `game.next.value("Yes")`
-</ul>
+
 
 #### Ответ: C
 
@@ -2284,12 +2284,12 @@ console.log(/* 2 */); // JavaScript loves you back ❤️
 console.log(String.raw`Hello\nworld`);
 </code>
 
-<ul>
+
 - A: `Hello world!`
 - B: `Hello` <br />&nbsp; &nbsp; &nbsp;`world`
 - C: `Hello\nworld`
 - D: `Hello\n` <br /> &nbsp; &nbsp; &nbsp;`world`
-</ul>
+
 
 #### Ответ: C
 
@@ -2325,12 +2325,12 @@ const data = getData();
 console.log(data);
 </code>
 
-<ul>
+
 - A: `"I made it!"`
 - B: `Promise {<resolved>: "I made it!"}`
 - C: `Promise {<pending>}`
 - D: `undefined`
-</ul>
+
 
 #### Ответ: C
 
@@ -2360,12 +2360,12 @@ const result = addToList("apple", ["banana"]);
 console.log(result);
 </code>
 
-<ul>
+
 - A: `['apple', 'banana']`
 - B: `2`
 - C: `true`
 - D: `undefined`
-</ul>
+
 
 #### Ответ: B
 
@@ -2393,12 +2393,12 @@ shape.x = 100;
 console.log(shape);
 </code>
 
-<ul>
+
 - A: `{ x: 100, y: 20 }`
 - B: `{ x: 10, y: 20 }`
 - C: `{ x: 100 }`
 - D: `ReferenceError`
-</ul>
+
 
 #### Ответ: B
 
@@ -2423,12 +2423,12 @@ const { name: myName } = { name: "Lydia" };
 console.log(name);
 </code>
 
-<ul>
+
 - A: `"Lydia"`
 - B: `"myName"`
 - C: `undefined`
 - D: `ReferenceError`
-</ul>
+
 
 #### Ответ: D
 
@@ -2453,10 +2453,10 @@ function sum(a, b) {
 }
 </code>
 
-<ul>
+
 - A: Да
 - B: Нет
-</ul>
+
 
 #### Ответ: A
 
@@ -2493,12 +2493,12 @@ console.log(addFunction(10));
 console.log(addFunction(5 * 2));
 </code>
 
-<ul>
+
 - A: `Calculated! 20` `Calculated! 20` `Calculated! 20`
 - B: `Calculated! 20` `From cache! 20` `Calculated! 20`
 - C: `Calculated! 20` `From cache! 20` `From cache! 20`
 - D: `Calculated! 20` `From cache! 20` `Error`
-</ul>
+
 
 #### Ответ: C
 
@@ -2533,12 +2533,12 @@ for (let item of myLifeSummedUp) {
 }
 </code>
 
-<ul>
+
 - A: `0` `1` `2` `3` и `"☕"` ` "💻"` `"🍷"` `"🍫"`
 - B: `"☕"` ` "💻"` `"🍷"` `"🍫"` и `"☕"` ` "💻"` `"🍷"` `"🍫"`
 - C: `"☕"` ` "💻"` `"🍷"` `"🍫"` и `0` `1` `2` `3`
 - D:  `0` `1` `2` `3` и `{0: "☕", 1: "💻", 2: "🍷", 3: "🍫"}`
-</ul>
+
 
 #### Ответ: A
 
@@ -2564,12 +2564,12 @@ const list = [1 + 2, 1 * 2, 1 / 2]
 console.log(list)
 </code>
 
-<ul>
+
 - A: `["1 + 2", "1 * 2", "1 / 2"]`
 - B: `["12", 2, 0.5]`
 - C: `[3, 2, 0.5]`
 - D:  `[1, 1, 1]`
-</ul>
+
 
 #### Ответ: C
 
@@ -2594,12 +2594,12 @@ function sayHi(name) {
 console.log(sayHi())
 </code>
 
-<ul>
+
 - A: `Hello there, `
 - B: `Hello there, undefined`
 - C: `Hello there, null`
 - D:  `ReferenceError`
-</ul>
+
 
 #### Ответ: B
 
@@ -2638,12 +2638,12 @@ setTimeout(() => {
 }, 0)
 </code>
 
-<ul>
+
 - A: `"🥑"` и `"😍"`
 - B: `"🥑"` и `"😎"`
 - C: `"😍"` и `"😎"`
 - D: `"😎"` и `"😎"`
-</ul>
+
 
 #### Ответ: B
 
@@ -2673,12 +2673,12 @@ city = "Amsterdam"
 console.log(person)
 </code>
 
-<ul>
+
 - A: `{ name: "Lydia", age: 21 }`
 - B: `{ name: "Lydia", age: 21, city: "Amsterdam" }`
 - C: `{ name: "Lydia", age: 21, city: undefined }`
 - D: `"Amsterdam"`
-</ul>
+
 
 #### Ответ: A
 
@@ -2713,12 +2713,12 @@ function checkAge(age) {
 console.log(checkAge(21))
 </code>
 
-<ul>
+
 - A: `"Sorry, you're too young."`
 - B: `"Yay! You're old enough!"`
 - C: `ReferenceError`
 - D: `undefined`
-</ul>
+
 
 #### Ответ: C
 
@@ -2739,12 +2739,12 @@ fetch('https://www.website.com/api/user/1')
   .then(res => console.log(res))
 </code>
 
-<ul>
+
 - A: Результат метода `fetch`.
 - B: Результат второго вызова метода `fetch`.
 - C: Результат коллбэка в предыдущем `.then()`.
 - D: Всегда будет `undefined`.
-</ul>
+
 
 #### Ответ: C
 
@@ -2765,12 +2765,12 @@ function getName(name) {
 }
 </code>
 
-<ul>
+
 - A: `!!name`
 - B: `name`
 - C: `new Boolean(name)`
 - D: `name.length`
-</ul>
+
 
 #### Ответ: A
 
@@ -2795,12 +2795,12 @@ function getName(name) {
 console.log("I want pizza"[0])
 </code>
 
-<ul>
+
 - A: `"""`
 - B: `"I"`
 - C: `SyntaxError`
 - D: `undefined`
-</ul>
+
 
 #### Ответ: B
 
@@ -2825,12 +2825,12 @@ function sum(num1, num2 = num1) {
 sum(10)
 </code>
 
-<ul>
+
 - A: `NaN`
 - B: `20`
 - C: `ReferenceError`
 - D: `undefined`
-</ul>
+
 
 #### Ответ: B
 
@@ -2858,12 +2858,12 @@ import * as data from "./module"
 console.log(data)
 </code>
 
-<ul>
+
 - A: `{ default: function default(), name: "Lydia" }`
 - B: `{ default: function default() }`
 - C: `{ default: "Hello world", name: "Lydia" }`
 - D: Global object of `module.js`
-</ul>
+
 
 #### Ответ: A
 
@@ -2891,12 +2891,12 @@ const member = new Person("John")
 console.log(typeof member)
 </code>
 
-<ul>
+
 - A: `"class"`
 - B: `"function"`
 - C: `"object"`
 - D: `"string"`
-</ul>
+
 
 #### Ответ: C
 
@@ -2925,12 +2925,12 @@ let newList = [1, 2, 3].push(4)
 console.log(newList.push(5))
 </code>
 
-<ul>
+
 - A: `[1, 2, 3, 4, 5]`
 - B: `[1, 2, 3, 5]`
 - C: `[1, 2, 3, 4]`
 - D: `Error`
-</ul>
+
 
 #### Ответ: D
 
@@ -2958,12 +2958,12 @@ console.log(giveLydiaPizza.prototype)
 console.log(giveLydiaChocolate.prototype)
 </code>
 
-<ul>
+
 - A: `{ constructor: ...}` `{ constructor: ...}`
 - B: `{}` `{ constructor: ...}`
 - C: `{ constructor: ...}` `{}`
 - D: `{ constructor: ...}` `undefined`
-</ul>
+
 
 #### Ответ: D
 
@@ -2989,12 +2989,12 @@ for (const [x, y] of Object.entries(person)) {
 }
 </code>
 
-<ul>
+
 - A: `name` `Lydia` and `age` `21`
 - B: `["name", "Lydia"]` and `["age", 21]`
 - C: `["name", "age"]` and `undefined`
 - D: `Error`
-</ul>
+
 
 #### Ответ: A
 
@@ -3024,12 +3024,12 @@ function getItems(fruitList, ...args, favoriteFruit) {
 getItems(["banana", "apple"], "pear", "orange")
 </code>
 
-<ul>
+
 - A: `["banana", "apple", "pear", "orange"]`
 - B: `[["banana", "apple"], "pear", "orange"]`
 - C: `["banana", "apple", ["pear"], "orange"]`
 - D: `SyntaxError`
-</ul>
+
 
 #### Ответ: D
 
@@ -3068,12 +3068,12 @@ console.log(nums(4, 2))
 console.log(nums(1, 2))
 </code>
 
-<ul>
+
 - A: `a is bigger`, `6` and `b is bigger`, `3`
 - B: `a is bigger`, `undefined` and `b is bigger`, `undefined`
 - C: `undefined` and `undefined`
 - D: `SyntaxError`
-</ul>
+
 
 #### Ответ: B
 
@@ -3114,12 +3114,12 @@ const member = new Person()
 console.log(member.name)
 </code>
 
-<ul>
+
 - A: `"Lydia"`
 - B: `"Sarah"`
 - C: `Error: cannot redeclare Person`
 - D: `SyntaxError`
-</ul>
+
 
 #### Ответ: B
 
@@ -3143,12 +3143,12 @@ console.log(info)
 console.log(Object.keys(info))
 </code>
 
-<ul>
+
 - A: `{Symbol('a'): 'b'}` and `["{Symbol('a')"]`
 - B: `{}` and `[]`
 - C: `{ a: "b" }` and `["a"]`
 - D: `{Symbol('a'): 'b'}` and `[]`
-</ul>
+
 
 #### Ответ: D
 
@@ -3176,12 +3176,12 @@ console.log(getList(list))
 console.log(getUser(user))
 </code>
 
-<ul>
+
 - A: `[1, [2, 3, 4]]` and `undefined`
 - B: `[1, [2, 3, 4]]` and `{ name: "Lydia", age: 21 }`
 - C: `[1, 2, 3, 4]` and `{ name: "Lydia", age: 21 }`
 - D: `Error` and `{ name: "Lydia", age: 21 }`
-</ul>
+
 
 #### Ответ: A
 
@@ -3212,12 +3212,12 @@ const name = "Lydia"
 console.log(name())
 </code>
 
-<ul>
+
 - A: `SyntaxError`
 - B: `ReferenceError`
 - C: `TypeError`
 - D: `undefined`
-</ul>
+
 
 #### Ответ: C
 
@@ -3244,12 +3244,12 @@ const output = `${[] && 'Im'}possible!
 You should${'' && `n't`} see a therapist after so much JavaScript lol`
 </code>
 
-<ul>
+
 - A: `possible! You should see a therapist after so much JavaScript lol`
 - B: `Impossible! You should see a therapist after so much JavaScript lol`
 - C: `possible! You shouldn't see a therapist after so much JavaScript lol`
 - D: `Impossible! You shouldn't see a therapist after so much JavaScript lol`
-</ul>
+
 
 #### Ответ: B
 
@@ -3274,12 +3274,12 @@ const three = ([] || 0 || true)
 console.log(one, two, three)
 </code>
 
-<ul>
+
 - A: `false` `null` `[]`
 - B: `null` `""` `true`
 - C: `{}` `""` `[]`
 - D: `null` `null` `true`
-</ul>
+
 
 #### Ответ: C
 
@@ -3317,12 +3317,12 @@ firstFunction()
 secondFunction()
 </code>
 
-<ul>
+
 - A: `I have resolved!`, `second` and `I have resolved!`, `second`
 - B: `second`, `I have resolved!` and `second`, `I have resolved!`
 - C: `I have resolved!`, `second` and `second`, `I have resolved!`
 - D: `second`, `I have resolved!` and `I have resolved!`, `second`
-</ul>
+
 
 #### Ответ: D
 
@@ -3357,12 +3357,12 @@ for (let item of set) {
 }
 </code>
 
-<ul>
+
 - A: `3`, `NaN`, `NaN`
 - B: `3`, `7`, `NaN`
 - C: `3`, `Lydia2`, `[object Object]2`
 - D: `"12"`, `Lydia2`, `[object Object]2`
-</ul>
+
 
 #### Ответ: C
 
@@ -3387,12 +3387,12 @@ for (let item of set) {
 Promise.resolve(5)
 </code>
 
-<ul>
+
 - A: `5`
 - B: `Promise {<pending>: 5}`
 - C: `Promise {<fulfilled>: 5}`
 - D: `Error`
-</ul>
+
 
 #### Ответ: C
 
@@ -3423,12 +3423,12 @@ const person = { name: "Lydia" }
 compareMembers(person)
 </code>
 
-<ul>
+
 - A: `Not the same!`
 - B: `They are the same!`
 - C: `ReferenceError`
 - D: `SyntaxError`
-</ul>
+
 
 #### Ответ: B
 
@@ -3463,12 +3463,12 @@ const colors = ["pink", "red", "blue"]
 console.log(colorConfig.colors[1])
 </code>
 
-<ul>
+
 - A: `true`
 - B: `false`
 - C: `undefined`
 - D: `TypeError`
-</ul>
+
 
 #### Ответ: D
 
@@ -3491,10 +3491,10 @@ JavaScript интерпретирует (или распаковывает) оп
 console.log('❤️' === '❤️')
 </code>
 
-<ul>
+
 - A: `true`
 - B: `false`
-</ul>
+
 
 #### Ответ: A
 
@@ -3520,12 +3520,12 @@ emojis.slice(1, 2, '✨')
 emojis.splice(1, 2, '✨')
 </code>
 
-<ul>
+
 - A: `All of them`
 - B: `map` `reduce` `slice` `splice`
 - C: `map` `slice` `splice` 
 - D: `splice`
-</ul>
+
 
 #### Ответ: D
 
@@ -3551,12 +3551,12 @@ info.favoriteFood = '🍝'
 console.log(food)
 </code>
 
-<ul>
+
 - A: `['🍕', '🍫', '🥑', '🍔']`
 - B: `['🍝', '🍫', '🥑', '🍔']`
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']` 
 - D: `ReferenceError`
-</ul>
+
 
 #### Ответ: A
 
@@ -3579,12 +3579,12 @@ console.log(food)
 JSON.parse()
 </code>
 
-<ul>
+
 - A: Разбирает JSON в значение JavaScript
 - B: Разбирает объект JavaScript в JSON
 - C: Разбирает любое значение JavaScript в JSON
 - D: Разбирает JSON непосредственно в объект JavaScript
-</ul>
+
 
 #### Ответ: A
 
@@ -3624,12 +3624,12 @@ function getName() {
 getName()
 </code>
 
-<ul>
+
 - A: Lydia
 - B: Sarah
 - C: `undefined`
 - D: `ReferenceError`
-</ul>
+
 
 #### Ответ: D
 
@@ -3674,12 +3674,12 @@ console.log(one.next().value)
 console.log(two.next().value)
 </code>
 
-<ul>
+
 - A: `a` and `a`
 - B: `a` and `undefined`
 - C: `['a', 'b', 'c']` and `a`
 - D: `a` and `['a', 'b', 'c']`
-</ul>
+
 
 #### Ответ: C
 
@@ -3714,12 +3714,12 @@ console.log(two.next().value) // undefined
 console.log(`${(x => x)('I love')} to program`)
 </code>
 
-<ul>
+
 - A: `I love to program`
 - B: `undefined to program`
 - C: `${(x => x)('I love') to program`
 - D: `TypeError`
-</ul>
+
 
 #### Ответ: A
 
@@ -3744,12 +3744,12 @@ let config = {
 config = null
 </code>
 
-<ul>
+
 - A: обратный вызов `setInterval` не будет вызван
 - B: обратный вызов `setInterval` будет вызван один раз
 - C: обратный вызов `setInterval` будет вызываться каждую секунду
 - D: мы никогда не вызовем `config.alert()`, т.к. `config` равно `null`
-</ul>
+
 
 #### Ответ: C
 
@@ -3778,12 +3778,12 @@ myMap.get(myFunc)
 myMap.get(() => 'greeting')
 </code>
 
-<ul>
+
 - A: 1
 - B: 2
 - C: 2 и 3
 - D: Каждый из них
-</ul>
+
 
 #### Ответ: B
 
@@ -3819,12 +3819,12 @@ changeAgeAndName()
 console.log(person)
 </code>
 
-<ul>
+
 - A: `{name: "Sarah", age: 22}`
 - B: `{name: "Sarah", age: 23}`
 - C: `{name: "Lydia", age: 22}`
 - D: `{name: "Lydia", age: 23}`
-</ul>
+
 
 #### Ответ: C
 
@@ -3849,12 +3849,12 @@ function sumValues(x, y, z) {
 }
 </code>
 
-<ul>
+
 - A: `sumValues([...1, 2, 3])`
 - B: `sumValues([...[1, 2, 3]])`
 - C: `sumValues(...[1, 2, 3])`
 - D: `sumValues([1, 2, 3])`
-</ul>
+
 
 #### Ответ: C
 
@@ -3876,12 +3876,12 @@ const list = ["🥳", "🤠", "🥰", "🤪"];
 console.log(list[(num += 1)]);
 </code>
 
-<ul>
+
 - A: `🤠`
 - B: `🥰`
 - C: `SyntaxError`
 - D: `ReferenceError`
-</ul>
+
 
 #### Ответ: B
 
@@ -3915,12 +3915,12 @@ console.log(person.getFullName?.());
 console.log(member.getLastName?.());
 </code>
 
-<ul>
+
 - A: `undefined` `undefined` `undefined` `undefined`
 - B: `Mara` `undefined` `Lydia Hallie` `undefined`
 - C: `Mara` `null` `Lydia Hallie` `null`
 - D: `null` `ReferenceError` `null` `ReferenceError`
-</ul>
+
 
 #### Ответ: B
 
@@ -3950,12 +3950,12 @@ if (groceries.indexOf("banana")) {
 }
 </code>
 
-<ul>
+
 - A: We have to buy bananas!
 - B: We don't have to buy bananas
 - C: `undefined`
 - D: `1`
-</ul>
+
 
 #### Ответ: B
 
@@ -3981,12 +3981,12 @@ const config = {
 console.log(config.language);
 </code>
 
-<ul>
+
 - A: `function language(lang) { this.languages.push(lang }`
 - B: `0`
 - C: `[]`
 - D: `undefined`
-</ul>
+
 
 #### Ответ: D
 
@@ -4008,12 +4008,12 @@ console.log(!typeof name === "object");
 console.log(!typeof name === "string");
 </code>
 
-<ul>
+
 - A: `false` `true`
 - B: `true` `false`
 - C: `false` `false`
 - D: `true` `true`
-</ul>
+
 
 #### Ответ: C
 
@@ -4039,12 +4039,12 @@ const add = x => y => z => {
 add(4)(5)(6);
 </code>
 
-<ul>
+
 - A: `4` `5` `6`
 - B: `6` `5` `4`
 - C: `4` `function` `function`
 - D: `undefined` `undefined` `6`
-</ul>
+
 
 #### Ответ: A
 
@@ -4074,12 +4074,12 @@ async function* range(start, end) {
 })();
 </code>
 
-<ul>
+
 - A: `Promise {1}` `Promise {2}` `Promise {3}`
 - B: `Promise {<pending>}` `Promise {<pending>}` `Promise {<pending>}`
 - C: `1` `2` `3`
 - D: `undefined` `undefined` `undefined`
-</ul>
+
 
 #### Ответ: C
 
@@ -4102,12 +4102,12 @@ const myFunc = ({ x, y, z }) => {
 myFunc(1, 2, 3);
 </code>
 
-<ul>
+
 - A: `1` `2` `3`
 - B: `{1: 1}` `{2: 2}` `{3: 3}`
 - C: `{ 1: undefined }` `undefined` `undefined`
 - D: `undefined` `undefined` `undefined`
-</ul>
+
 
 #### Ответ: D
 
@@ -4140,12 +4140,12 @@ function getFine(speed, amount) {
 console.log(getFine(130, 300))
 </code>
 
-<ul>
+
 - A: The driver drove 130 and has to pay 300
 - B: The driver drove 130 mph and has to pay \$300.00
 - C: The driver drove undefined and has to pay undefined
 - D: The driver drove 130.00 and has to pay 300.00
-</ul>
+
 
 #### Ответ: B
 
@@ -4167,12 +4167,12 @@ const spookyItems = ["👻", "🎃", "🕸"];
 console.log(spookyItems);
 </code>
 
-<ul>
+
 - A: `["👻", "🎃", "🕸"]`
 - B: `["👻", "🎃", "🕸", "💀"]`
 - C: `["👻", "🎃", "🕸", { item: "💀" }]`
 - D: `["👻", "🎃", "🕸", "[object Object]"]`
-</ul>
+
 
 #### Ответ: B
 
@@ -4198,12 +4198,12 @@ console.log(isNaN(name));
 console.log(isNaN(age));
 </code>
 
-<ul>
+
 - A: `true` `false` `true` `false`
 - B: `true` `false` `false` `false`
 - C: `false` `false` `true` `false`
 - D: `false` `true` `false` `true`
-</ul>
+
 
 #### Ответ: C
 
@@ -4231,12 +4231,12 @@ function getInfo() {
 getInfo();
 </code>
 
-<ul>
+
 - A: `"number"`
 - B: `"string"`
 - C: `undefined`
 - D: `ReferenceError`
-</ul>
+
 
 #### Ответ: D
 
@@ -4265,12 +4265,12 @@ const myPromise = Promise.resolve("Woah some cool data");
 })();
 </code>
 
-<ul>
+
 - A: `Woah some cool data`
 - B: `Oh finally!`
 - C: `Woah some cool data` `Oh finally!`
 - D: `Oops didn't work` `Oh finally!`
-</ul>
+
 
 #### Ответ: C
 
@@ -4291,12 +4291,12 @@ const emojis = ["🥑", ["✨", "✨", ["🍕", "🍕"]]];
 console.log(emojis.flat(1));
 </code>
 
-<ul>
+
 - A: `['🥑', ['✨', '✨', ['🍕', '🍕']]]`
 - B: `['🥑', '✨', '✨', ['🍕', '🍕']]`
 - C: `['🥑', ['✨', '✨', '🍕', '🍕']]`
 - D: `['🥑', '✨', '✨', '🍕', '🍕']`
-</ul>
+
 
 #### Ответ: B
 
@@ -4332,12 +4332,12 @@ counterTwo.increment();
 console.log(counterOne.count);
 </code>
 
-<ul>
+
 - A: `0`
 - B: `1`
 - C: `2`
 - D: `3`
-</ul>
+
 
 #### Ответ: D
 
@@ -4380,12 +4380,12 @@ funcOne();
 funcTwo();
 </code>
 
-<ul>
+
 - A: `Promise! Last line! Promise! Last line! Last line! Promise!`
 - B: `Last line! Timeout! Promise! Last line! Timeout! Promise!`
 - C: `Promise! Last line! Last line! Promise! Timeout! Timeout!`
 - D: `Last line! Promise! Promise! Last line! Timeout! Timeout!`
-</ul>
+
 
 #### Ответ: D
 
@@ -4418,12 +4418,12 @@ export default function sum(x) {
 import * as sum from './sum';
 </code>
 
-<ul>
+
 - A: `sum(4)`
 - B: `sum.sum(4)`
 - C: `sum.default(4)`
 - D: Нельзя импортировать значения по умолчанию используя `*`, только именованные экспорты
-</ul>
+
 
 #### Ответ: C
 
@@ -4479,12 +4479,12 @@ person.name = 'Lydia';
 person.name;
 </code>
 
-<ul>
+
 - A: `Added a new property!`
 - B: `Accessed a property!`
 - C: `Added a new property!` `Accessed a property!`
 - D: В лог ничего не попадёт
-</ul>
+
 
 #### Ответ: C
 
@@ -4511,12 +4511,12 @@ const person = { name: 'Lydia Hallie' };
 Object.seal(person);
 </code>
 
-<ul>
+
 - A: `person.name = "Evan Bacon"`
 - B: `person.age = 21`
 - C: `delete person.name`
 - D: `Object.assign(person, { age: 21 })`
-</ul>
+
 
 #### Ответ: A
 
@@ -4544,12 +4544,12 @@ const person = {
 Object.freeze(person);
 </code>
 
-<ul>
+
 - A: `person.name = "Evan Bacon"`
 - B: `delete person.address`
 - C: `person.address.street = "101 Main St"`
 - D: `person.pet = { name: "Mara" }`
-</ul>
+
 
 #### Ответ: C
 
