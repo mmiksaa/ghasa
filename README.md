@@ -944,7 +944,9 @@ WebAPI не может добавлять содержимое в стек ко�
 
 ###### 31. Что будет в event.target после клика на кнопку?
 
-</section>html
+</section>
+
+<section>
 <div onclick="console.log('first div')">
   <div onclick="console.log('second div')">
     <span onclick="console.log('button')">
@@ -953,6 +955,7 @@ WebAPI не может добавлять содержимое в стек ко�
   </span>
 </div>
 </section>
+
 
 
 - A: Внешний div
