@@ -4,7 +4,7 @@
 
 ###### 1. Что будет в консоли?
 
-<section>
+```javascript
 function sayHi() {
   console.log(name);
   console.log(age);
@@ -13,7 +13,7 @@ function sayHi() {
 }
 
 sayHi();
-</section>
+```
 
 
 - A: Lydia и undefined
@@ -37,7 +37,7 @@ sayHi();
 
 ###### 2. Что будет в консоли?
 
-<section>
+```javascript
 for (var i = 0; i < 3; i++) {
   setTimeout(() => console.log(i), 1);
 }
@@ -45,7 +45,7 @@ for (var i = 0; i < 3; i++) {
 for (let i = 0; i <section 3; i++) {
   setTimeout(() => console.log(i), 1);
 }
-</section>
+```
 
 
 - A: 0 1 2 и 0 1 2
@@ -68,7 +68,7 @@ for (let i = 0; i <section 3; i++) {
 
 ###### 3. Что будет в консоли?
 
-<section>
+```javascript
 const shape = {
   radius: 10,
   diameter() {
@@ -79,7 +79,7 @@ const shape = {
 
 shape.diameter();
 shape.perimeter();
-</section>
+```
 
 
 - A: 20 и 62.83185307179586
@@ -105,10 +105,10 @@ shape.perimeter();
 
 ###### 4. Что будет в консоли?
 
-<section>
+```javascript
 +true;
 !"Lydia";
-</section>
+```
 
 
 - A: 1 и false
@@ -131,7 +131,7 @@ shape.perimeter();
 
 ###### 5. Что НЕ является валидным?
 
-<section>
+```javascript
 const bird = {
   size: "small"
 };
@@ -140,7 +140,7 @@ const mouse = {
   name: "Mickey",
   small: true
 };
-</section>
+```
 
 
 - A: mouse.bird.size
@@ -169,14 +169,14 @@ mouse[bird.size]: Сперва определяется bird.size, которо�
 
 ###### 6. Что будет в консоли?
 
-<section>
+```javascript
 let c = { greeting: "Hey!" };
 let d;
 
 d = c;
 c.greeting = "Hello";
 console.log(d.greeting);
-</section>
+```
 
 
 - A: Hello
@@ -205,7 +205,7 @@ console.log(d.greeting);
 
 ###### 7. Что будет в консоли?
 
-<section>
+```javascript
 let a = 3;
 let b = new Number(3);
 let c = 3;
@@ -213,7 +213,7 @@ let c = 3;
 console.log(a == b);
 console.log(a === b);
 console.log(b === c);
-</section>
+```
 
 
 - A: true false true
@@ -239,7 +239,7 @@ new Number() это встроенный конструктор функции. 
 
 ###### 8. Каким будет результат?
 
-<section>
+```javascript
 class Chameleon {
   static colorChange(newColor) {
     this.newColor = newColor;
@@ -253,7 +253,7 @@ class Chameleon {
 
 const freddie = new Chameleon({ newColor: "purple" });
 freddie.colorChange("orange");
-</section>
+```
 
 
 - A: orange
@@ -275,11 +275,11 @@ freddie.colorChange("orange");
 
 ###### 9. Что будет в консоли?
 
-<section>
+```javascript
 let greeting;
 greetign = {}; // Опечатка!
 console.log(greetign);
-</section>
+```
 
 
 - A: {}
@@ -302,13 +302,13 @@ console.log(greetign);
 
 ###### 10. Что произойдет?
 
-<section>
+```javascript
 function bark() {
   console.log("Woof!");
 }
 
 bark.animal = "dog";
-</section>
+```
 
 
 - A: Ничего, всё в порядке!
@@ -332,7 +332,7 @@ bark.animal = "dog";
 
 ###### 11. Что будет в консоли?
 
-<section>
+```javascript
 function Person(firstName, lastName) {
   this.firstName = firstName;
   this.lastName = lastName;
@@ -344,7 +344,7 @@ Person.getFullName = function () {
 }
 
 console.log(member.getFullName());
-</section>
+```
 
 
 - A: TypeError
@@ -358,11 +358,11 @@ console.log(member.getFullName());
 <span>
 Нельзя добавлять свойства конструктору, как обычному объекту. Если нужно добавить фичу всем объектам, то необходимо использовать прототипы. В данном случае
 
-</section>js
+```js
 Person.prototype.getFullName = function () {
   return ${this.firstName} ${this.lastName};
 }
-</section>
+```
 
 сделает метод member.getFullName() рабочим. В чем тут преимущество? Предположим, что мы добавили этот метод к конструктору. Возможно, не каждому экземпляру Person нужен этот метод. Это приведет к большим потерям памяти, т.к. все экземпляры будут иметь это свойство. Напротив, если мы добавим этот метод только к прототипу, у нас будет только одно место в памяти, к которому смогут обращаться все экземпляры!
 
@@ -374,7 +374,7 @@ Person.prototype.getFullName = function () {
 
 ###### 12. Что будет в консоли?
 
-<section>
+```javascript
 function Person(firstName, lastName) {
   this.firstName = firstName;
   this.lastName = lastName;
@@ -385,7 +385,7 @@ const sarah = Person("Sarah", "Smith");
 
 console.log(lydia);
 console.log(sarah);
-</section>
+```
 
 
 - A: Person {firstName: "Lydia", lastName: "Hallie"} и undefined
@@ -449,13 +449,13 @@ console.log(sarah);
 
 ###### 15. Каким будет результат?
 
-<section>
+```javascript
 function sum(a, b) {
   return a + b;
 }
 
 sum(1, "2");
-</section>
+```
 
 
 - A: NaN
@@ -479,12 +479,12 @@ JavaScript это **динамически типизированный язык
 
 ###### 16. Что будет в консоли?
 
-<section>
+```javascript
 let number = 0;
 console.log(number++);
 console.log(++number);
 console.log(number);
-</section>
+```
 
 
 - A: 1 1 2
@@ -516,7 +516,7 @@ console.log(number);
 
 ###### 17. Что будет в консоли?
 
-<section>
+```javascript
 function getPersonInfo(one, two, three) {
   console.log(one);
   console.log(two);
@@ -527,7 +527,7 @@ const person = "Lydia";
 const age = 21;
 
 getPersonInfo${person} is ${age} years old;
-</section>
+```
 
 
 - A: "Lydia" 21 ["", " is ", " years old"]
@@ -548,7 +548,7 @@ getPersonInfo${person} is ${age} years old;
 
 ###### 18. Что будет в консоли?
 
-<section>
+```javascript
 function checkAge(data) {
   if (data === { age: 18 }) {
     console.log("Ты взрослый!");
@@ -560,7 +560,7 @@ function checkAge(data) {
 }
 
 checkAge({ age: 18 });
-</section>
+```
 
 
 - A: Ты взрослый!
@@ -585,13 +585,13 @@ checkAge({ age: 18 });
 
 ###### 19. Что будет в консоли?
 
-<section>
+```javascript
 function getAge(...args) {
   console.log(typeof args);
 }
 
 getAge(21);
-</section>
+```
 
 
 - A: "number"
@@ -613,7 +613,7 @@ getAge(21);
 
 ###### 20. Что будет в консоли?
 
-<section>
+```javascript
 function getAge() {
   "use strict";
   age = 21;
@@ -621,7 +621,7 @@ function getAge() {
 }
 
 getAge();
-</section>
+```
 
 
 - A: 21
@@ -643,9 +643,9 @@ getAge();
 
 ###### 21. Чему будет равно sum?
 
-<section>
+```javascript
 const sum = eval("10*10+5");
-</section>
+```
 
 
 - A: 105
@@ -667,9 +667,9 @@ eval выполняет код, переданный в виде строки. �
 
 ###### 22. Как долго будет доступен coolsecret?
 
-<section>
+```javascript
 sessionStorage.setItem("coolsecret", 123);
-</section>
+```
 
 
 - A: Всегда, данные не потеряются.
@@ -693,12 +693,12 @@ sessionStorage.setItem("coolsecret", 123);
 
 ###### 23. Что будет в консоли?
 
-<section>
+```javascript
 var num = 8;
 var num = 10;
 
 console.log(num);
-</section>
+```
 
 
 - A: 8
@@ -722,7 +722,7 @@ console.log(num);
 
 ###### 24. Каким будет результат?
 
-<section>
+```javascript
 const obj = { 1: "a", 2: "b", 3: "c" };
 const set = new Set([1, 2, 3, 4, 5]);
 
@@ -730,7 +730,7 @@ obj.hasOwnProperty("1");
 obj.hasOwnProperty(1);
 set.has("1");
 set.has(1);
-</section>
+```
 
 
 - A: false true false true
@@ -754,10 +754,10 @@ set.has(1);
 
 ###### 25. Что будет в консоли?
 
-<section>
+```javascript
 const obj = { a: "one", b: "two", a: "three" };
 console.log(obj);
-</section>
+```
 
 
 - A: { a: "one", b: "two" }
@@ -798,12 +798,12 @@ console.log(obj);
 
 ###### 27. Что будет в консоли?
 
-<section>
+```javascript
 for (let i = 1; i <section 5; i++) {
   if (i === 3) continue;
   console.log(i);
 }
-</section>
+```
 
 
 - A: 1 2
@@ -825,7 +825,7 @@ for (let i = 1; i <section 5; i++) {
 
 ###### 28. Каким будет результат?
 
-<section>
+```javascript
 String.prototype.giveLydiaPizza = () => {
   return "Just give Lydia pizza already!";
 };
@@ -833,7 +833,7 @@ String.prototype.giveLydiaPizza = () => {
 const name = "Lydia";
 
 name.giveLydiaPizza();
-</section>
+```
 
 
 - A: "Just give Lydia pizza already!"
@@ -855,7 +855,7 @@ String это встроенный конструктор, к которому �
 
 ###### 29. Что будет в консоли?
 
-<section>
+```javascript
 const a = {};
 const b = { key: "b" };
 const c = { key: "c" };
@@ -864,7 +864,7 @@ a[b] = 123;
 a[c] = 456;
 
 console.log(a[b]);
-</section>
+```
 
 
 - A: 123
@@ -890,7 +890,7 @@ console.log(a[b]);
 
 ###### 30. Каким будет результат?
 
-<section>
+```javascript
 const foo = () => console.log("First");
 const bar = () => setTimeout(() => console.log("Second"));
 const baz = () => console.log("Third");
@@ -898,7 +898,7 @@ const baz = () => console.log("Third");
 bar();
 foo();
 baz();
-</section>
+```
 
 
 - A: First Second Third
@@ -944,9 +944,9 @@ WebAPI не может добавлять содержимое в стек ко�
 
 ###### 31. Что будет в event.target после клика на кнопку?
 
-</section>
+```
 
-<section>
+```javascript
 <div onclick="console.log('first div')">
   <div onclick="console.log('second div')">
     <span onclick="console.log('button')">
@@ -954,7 +954,7 @@ WebAPI не может добавлять содержимое в стек ко�
     </span>
   </span>
 </div>
-</section>
+```
 
 
 
@@ -977,13 +977,13 @@ WebAPI не может добавлять содержимое в стек ко�
 
 ###### 32. Что будет в консоли после клика по параграфу?
 
-</section>html
+```html
 <div onclick="console.log('div')">
   <span onclick="console.log('p')">
     Кликни меня!
   </span>
 </div>
-</section>
+```
 
 
 - A: p div
@@ -1005,7 +1005,7 @@ WebAPI не может добавлять содержимое в стек ко�
 
 ###### 33. Что будет в консоли?
 
-<section>
+```javascript
 const person = { name: "Lydia" };
 
 function sayHi(age) {
@@ -1014,7 +1014,7 @@ function sayHi(age) {
 
 sayHi.call(person, 21);
 sayHi.bind(person, 21);
-</section>
+```
 
 
 - A: undefined is 21 Lydia is 21
@@ -1038,13 +1038,13 @@ sayHi.bind(person, 21);
 
 ###### 34. Каким будет результат?
 
-<section>
+```javascript
 function sayHi() {
   return (() => 0)();
 }
 
 typeof sayHi();
-</section>
+```
 
 
 - A: "object"
@@ -1067,14 +1067,14 @@ typeof sayHi();
 
 ###### 35. Какие из этих значений являются "ложными"?
 
-<section>
+```javascript
 0;
 new Number(0);
 ("");
 (" ");
 new Boolean(false);
 undefined;
-</section>
+```
 
 
 - A: 0, '', undefined
@@ -1105,9 +1105,9 @@ undefined;
 
 ###### 36. Что будет в консоли
 
-<section>
+```javascript
 console.log(typeof typeof 1);
-</section>
+```
 
 
 - A: "number"
@@ -1130,11 +1130,11 @@ typeof "number" возвращает "string"
 
 ###### 37. Что будет в консоли?
 
-<section>
+```javascript
 const numbers = [1, 2, 3];
 numbers[10] = 11;
 console.log(numbers);
-</section>
+```
 
 
 - A: [1, 2, 3, 7 x null, 11]
@@ -1160,7 +1160,7 @@ console.log(numbers);
 
 ###### 38. Что будет в консоли?
 
-<section>
+```javascript
 (() => {
   let x, y;
   try {
@@ -1172,7 +1172,7 @@ console.log(numbers);
   console.log(x);
   console.log(y);
 })();
-</section>
+```
 
 
 - A: 1 undefined 2
@@ -1222,14 +1222,14 @@ console.log(numbers);
 
 ###### 40. Каким будет результат?
 
-<section>
+```javascript
 [[0, 1], [2, 3]].reduce(
   (acc, cur) => {
     return acc.concat(cur);
   },
   [1, 2]
 );
-</section>
+```
 
 
 - A: [0, 1, 2, 3, 1, 2]
@@ -1253,11 +1253,11 @@ console.log(numbers);
 
 ###### 41. Каким будет результат?
 
-<section>
+```javascript
 !!null;
 !!"";
 !!1;
-</section>
+```
 
 
 - A: false true false
@@ -1283,9 +1283,9 @@ null - "ложный". !null возвращает true. !true возвращае
 
 ###### 42. Что возвращает метод setInterval?
 
-<section>
+```javascript
 setInterval(() => console.log("Hi"), 1000);
-</section>
+```
 
 
 - A: уникальный id
@@ -1307,9 +1307,9 @@ setInterval(() => console.log("Hi"), 1000);
 
 ###### 43. Каким будет результат?
 
-<section>
+```javascript
 [..."Lydia"];
-</section>
+```
 
 
 - A: ["L", "y", "d", "i", "a"]
@@ -1331,7 +1331,7 @@ setInterval(() => console.log("Hi"), 1000);
 
 ###### 44. Каким будет результат?
 
-<section>
+```javascript
 function* generator(i) {
   yield i;
   yield i * 2;
@@ -1341,7 +1341,7 @@ const gen = generator(10);
 
 console.log(gen.next().value);
 console.log(gen.next().value);
-</section>
+```
 
 
 - A: [0, 10], [10, 20]
@@ -1367,7 +1367,7 @@ console.log(gen.next().value);
 
 ###### 45. Каким будет результат?
 
-<section>
+```javascript
 const firstPromise = new Promise((res, rej) => {
   setTimeout(res, 500, "один");
 });
@@ -1377,7 +1377,7 @@ const secondPromise = new Promise((res, rej) => {
 });
 
 Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
-</section>
+```
 
 
 - A: "один"
@@ -1399,13 +1399,13 @@ Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
 
 ###### 46. Каким будет результат?
 
-<section>
+```javascript
 let person = { name: "Lydia" };
 const members = [person];
 person = null;
 
 console.log(members);
-</section>
+```
 
 
 - A: null
@@ -1439,7 +1439,7 @@ console.log(members);
 
 ###### 47. Каким будет результат?
 
-<section>
+```javascript
 const person = {
   name: "Lydia",
   age: 21
@@ -1448,7 +1448,7 @@ const person = {
 for (const item in person) {
   console.log(item);
 }
-</section>
+```
 
 
 - A: { name: "Lydia" }, { age: 21 }
@@ -1470,9 +1470,9 @@ for (const item in person) {
 
 ###### 48. Каким будет результат?
 
-<section>
+```javascript
 console.log(3 + 4 + "5");
-</section>
+```
 
 
 - A: "345"
@@ -1498,9 +1498,9 @@ console.log(3 + 4 + "5");
 
 ###### 49. Какое значение num?
 
-<section>
+```javascript
 const num = parseInt("7*6", 10);
-</section>
+```
 
 
 - A: 42
@@ -1524,12 +1524,12 @@ const num = parseInt("7*6", 10);
 
 ###### 50. Каким будет результат?
 
-<section>
+```javascript
 [1, 2, 3].map(num => {
   if (typeof num === "number") return;
   return num * 2;
 });
-</section>
+```
 
 
 - A: []
@@ -1553,7 +1553,7 @@ const num = parseInt("7*6", 10);
 
 ###### 51. Каким будет результат?
 
-<section>
+```javascript
 function getInfo(member, year) {
   member.name = "Lydia";
   year = 1998;
@@ -1565,7 +1565,7 @@ const birthYear = "1997";
 getInfo(person, birthYear);
 
 console.log(person, birthYear);
-</section>
+```
 
 
 - A: { name: "Lydia" }, "1997"
@@ -1591,7 +1591,7 @@ console.log(person, birthYear);
 
 ###### 52. Каким будет результат?
 
-<section>
+```javascript
 function greeting() {
   throw "Hello world!";
 }
@@ -1606,7 +1606,7 @@ function sayHi() {
 }
 
 sayHi();
-</section>
+```
 
 
 - A: It worked! Hello world!
@@ -1630,7 +1630,7 @@ sayHi();
 
 ###### 53. Каким будет результат?
 
-<section>
+```javascript
 function Car() {
   this.make = "Lamborghini";
   return { make: "Maserati" };
@@ -1638,7 +1638,7 @@ function Car() {
 
 const myCar = new Car();
 console.log(myCar.make);
-</section>
+```
 
 
 - A: "Lamborghini"
@@ -1660,14 +1660,14 @@ console.log(myCar.make);
 
 ###### 54. Каким будет результат?
 
-<section>
+```javascript
 (() => {
   let x = (y = 10);
 })();
 
 console.log(typeof x);
 console.log(typeof y);
-</section>
+```
 
 
 - A: "undefined", "number"
@@ -1681,10 +1681,10 @@ console.log(typeof y);
 <span>
 let x = y = 10; на самом деле является сокращением для:
 
-<section>
+```javascript
 y = 10;
 let x = y;
-</section>
+```
 
 Когда мы устанавливаем y равным 10, мы фактически добавляем свойство y к глобальному объекту (window в браузере, global в Node). В браузере window.y теперь равен 10.
 
@@ -1700,7 +1700,7 @@ let x = y;
 
 ###### 55. Какой будет вывод?
 
-<section>
+```javascript
 class Dog {
   constructor(name) {
     this.name = name;
@@ -1718,7 +1718,7 @@ pet.bark();
 delete Dog.prototype.bark;
 
 pet.bark();
-</section>
+```
 
 
 - A: "Woof I am Mara", TypeError
@@ -1742,11 +1742,11 @@ pet.bark();
 
 ###### 56. Какой будет вывод?
 
-<section>
+```javascript
 const set = new Set([1, 1, 2, 3, 4]);
 
 console.log(set);
-</section>
+```
 
 
 - A: [1, 1, 2, 3, 4]
@@ -1770,20 +1770,20 @@ console.log(set);
 
 ###### 57. Какой будет вывод?
 
-<section>
+```javascript
 // counter.js
 let counter = 10;
 export default counter;
-</section>
+```
 
-<section>
+```javascript
 // index.js
 import myCounter from "./counter";
 
 myCounter += 1;
 
 console.log(myCounter);
-</section>
+```
 
 
 - A: 10
@@ -1807,13 +1807,13 @@ console.log(myCounter);
 
 ###### 58. Какой будет вывод?
 
-<section>
+```javascript
 const name = "Lydia";
 age = 21;
 
 console.log(delete name);
 console.log(delete age);
-</section>
+```
 
 
 - A: false, true
@@ -1837,12 +1837,12 @@ console.log(delete age);
 
 ###### 59. Какой будет вывод?
 
-<section>
+```javascript
 const numbers = [1, 2, 3, 4, 5];
 const [y] = numbers;
 
 console.log(y);
-</section>
+```
 
 
 - A: [[1, 2, 3, 4, 5]]
@@ -1856,17 +1856,17 @@ console.log(y);
 <span>
 Мы можем распаковать значения из массивов или свойств из объектов путем деструктуризации. Например:
 
-<section>
+```javascript
 [a, b] = [1, 2];
-</section>
+```
 
 <img src="https://i.imgur.com/ADFpVop.png" width="200">
 
 Значение a теперь равно 1, а значение b теперь равно 2. Что мы на самом деле сделали в этом вопросе, так это:
 
-<section>
+```javascript
 [y] = [1, 2, 3, 4, 5];
-</section>
+```
 
 <img src="https://i.imgur.com/NzGkMNk.png" width="200">
 
@@ -1880,12 +1880,12 @@ console.log(y);
 
 ###### 60. Какой будет вывод?
 
-<section>
+```javascript
 const user = { name: "Lydia", age: 21 };
 const admin = { admin: true, ...user };
 
 console.log(admin);
-</section>
+```
 
 
 - A: { admin: true, user: { name: "Lydia", age: 21 } }
@@ -1907,14 +1907,14 @@ console.log(admin);
 
 ###### 61. Какой будет вывод?
 
-<section>
+```javascript
 const person = { name: "Lydia" };
 
 Object.defineProperty(person, "age", { value: 21 });
 
 console.log(person);
 console.log(Object.keys(person));
-</section>
+```
 
 
 - A: { name: "Lydia", age: 21 }, ["name", "age"]
@@ -1938,7 +1938,7 @@ console.log(Object.keys(person));
 
 ###### 62. Какой будет вывод?
 
-<section>
+```javascript
 const settings = {
   username: "lydiahallie",
   level: 19,
@@ -1947,7 +1947,7 @@ const settings = {
 
 const data = JSON.stringify(settings, ["level", "health"]);
 console.log(data);
-</section>
+```
 
 
 - A: "{"level":19, "health":90}"
@@ -1973,7 +1973,7 @@ console.log(data);
 
 ###### 63. Какой будет вывод?
 
-<section>
+```javascript
 let num = 10;
 
 const increaseNumber = () => num++;
@@ -1984,7 +1984,7 @@ const num2 = increasePassedNumber(num1);
 
 console.log(num1);
 console.log(num2);
-</section>
+```
 
 
 - A: 10, 10
@@ -2008,7 +2008,7 @@ num2 - это 10, так как мы передали num1 в incpasePassedNumbe
 
 ###### 64. Какой будет вывод?
 
-<section>
+```javascript
 const value = { number: 10 };
 
 const multiply = (x = { ...value }) => {
@@ -2019,7 +2019,7 @@ multiply();
 multiply();
 multiply(value);
 multiply(value);
-</section>
+```
 
 
 - A: 20, 40, 80, 160
@@ -2047,9 +2047,9 @@ multiply(value);
 
 ###### 65. Какой будет вывод?
 
-<section>
+```javascript
 [1, 2, 3, 4].reduce((x, y) => console.log(x, y));
-</section>
+```
 
 
 - A: 1 2, 3 3 и 6 4
@@ -2080,7 +2080,7 @@ multiply(value);
 
 ###### 66. С помощью какого конструктора мы можем успешно расширить класс Dog?
 
-<section>
+```javascript
 class Dog {
   constructor(name) {
     this.name = name;
@@ -2109,7 +2109,7 @@ class Labrador extends Dog {
   }
 
 };
-</section>
+```
 
 
 - A: 1
@@ -2134,7 +2134,7 @@ class Labrador extends Dog {
 
 ###### 67. Какой будет вывод?
 
-<section>
+```javascript
 // index.js
 console.log('running index.js');
 import { sum } from './sum.js';
@@ -2143,7 +2143,7 @@ console.log(sum(1, 2));
 // sum.js
 console.log('running sum.js');
 export const sum = (a, b) => a + b;
-</section>
+```
 
 
 - A: running index.js, running sum.js, 3
@@ -2167,11 +2167,11 @@ export const sum = (a, b) => a + b;
 
 ###### 68. Какой будет вывод?
 
-<section>
+```javascript
 console.log(Number(2) === Number(2))
 console.log(Boolean(false) === Boolean(false))
 console.log(Symbol('foo') === Symbol('foo'))
-</section>
+```
 
 
 - A: true, true, false
@@ -2193,11 +2193,11 @@ console.log(Symbol('foo') === Symbol('foo'))
 
 ###### 69. Какой будет вывод?
 
-<section>
+```javascript
 const name = "Lydia Hallie"
 console.log(name.padStart(13))
 console.log(name.padStart(2))
-</section>
+```
 
 
 - A: "Lydia Hallie", "Lydia Hallie"
@@ -2221,9 +2221,9 @@ console.log(name.padStart(2))
 
 ###### 70. Какой будет вывод?
 
-<section>
+```javascript
 console.log("🥑" + "💻");
-</section>
+```
 
 
 - A: "🥑💻"
@@ -2245,7 +2245,7 @@ console.log("🥑" + "💻");
 
 ###### 71. Как мы можем вывести в лог значения, которые закомментированы после оператора console.log?
 
-<section>
+```javascript
 function* startGame() {
   const answer = yield "Do you love JavaScript?";
   if (answer !== "Yes") {
@@ -2257,7 +2257,7 @@ function* startGame() {
 const game = startGame();
 console.log(/* 1 */); // Do you love JavaScript?
 console.log(/* 2 */); // JavaScript loves you back ❤️
-</section>
+```
 
 
 - A: game.next("Yes").value и game.next().value
@@ -2283,9 +2283,9 @@ console.log(/* 2 */); // JavaScript loves you back ❤️
 
 ###### 72. Какой будет вывод?
 
-<section>
+```javascript
 console.log(String.rawHello\nworld);
-</section>
+```
 
 
 - A: Hello world!
@@ -2319,14 +2319,14 @@ C:\Documents\Projects\table.html
 
 ###### 73. Какой будет вывод?
 
-<section>
+```javascript
 async function getData() {
   return await Promise.resolve("I made it!");
 }
 
 const data = getData();
 console.log(data);
-</section>
+```
 
 
 - A: "I made it!"
@@ -2354,14 +2354,14 @@ data.then(res => console.log(res))
 
 ###### 74. Какой будет вывод?
 
-<section>
+```javascript
 function addToList(item, list) {
   return list.push(item);
 }
 
 const result = addToList("apple", ["banana"]);
 console.log(result);
-</section>
+```
 
 
 - A: ['apple', 'banana']
@@ -2385,7 +2385,7 @@ console.log(result);
 
 ###### 75. Какой будет вывод?
 
-<section>
+```javascript
 const box = { x: 10, y: 20 };
 
 Object.freeze(box);
@@ -2394,7 +2394,7 @@ const shape = box;
 shape.x = 100;
 
 console.log(shape);
-</section>
+```
 
 
 - A: { x: 100, y: 20 }
@@ -2420,11 +2420,11 @@ Object.freeze делает невозможным добавление, удал
 
 ###### 76. Какой будет вывод?
 
-<section>
+```javascript
 const { name: myName } = { name: "Lydia" };
 
 console.log(name);
-</section>
+```
 
 
 - A: "Lydia"
@@ -2450,11 +2450,11 @@ console.log(name);
 
 ###### 77. Это чистая функция?
 
-<section>
+```javascript
 function sum(a, b) {
   return a + b;
 }
-</section>
+```
 
 
 - A: Да
@@ -2476,7 +2476,7 @@ function sum(a, b) {
 
 ###### 78. Какой будет вывод?
 
-<section>
+```javascript
 const add = () => {
   const cache = {};
   return num => {
@@ -2494,7 +2494,7 @@ const addFunction = add();
 console.log(addFunction(10));
 console.log(addFunction(10));
 console.log(addFunction(5 * 2));
-</section>
+```
 
 
 - A: Calculated! 20 Calculated! 20 Calculated! 20
@@ -2524,7 +2524,7 @@ console.log(addFunction(5 * 2));
 
 ###### 79. Какой будет вывод?
 
-<section>
+```javascript
 const myLifeSummedUp = ["☕", "💻", "🍷", "🍫"]
 
 for (let item in myLifeSummedUp) {
@@ -2534,7 +2534,7 @@ for (let item in myLifeSummedUp) {
 for (let item of myLifeSummedUp) {
   console.log(item)
 }
-</section>
+```
 
 
 - A: 0 1 2 3 и "☕"  "💻" "🍷" "🍫"
@@ -2562,10 +2562,10 @@ for (let item of myLifeSummedUp) {
 
 ###### 80. Какой будет вывод?
 
-<section>
+```javascript
 const list = [1 + 2, 1 * 2, 1 / 2]
 console.log(list)
-</section>
+```
 
 
 - A: ["1 + 2", "1 * 2", "1 / 2"]
@@ -2589,13 +2589,13 @@ console.log(list)
 
 ###### 81. Какой будет вывод?
 
-<section>
+```javascript
 function sayHi(name) {
   return Hi there, ${name}
 }
 
 console.log(sayHi())
-</section>
+```
 
 
 - A: Hello there, 
@@ -2623,7 +2623,7 @@ function sayHi(name = "Lydia") { ... }
 
 ###### 82. Какой будет вывод?
 
-<section>
+```javascript
 var status = "😎"
 
 setTimeout(() => {
@@ -2639,7 +2639,7 @@ setTimeout(() => {
   console.log(data.getStatus())
   console.log(data.getStatus.call(this))
 }, 0)
-</section>
+```
 
 
 - A: "🥑" и "😍"
@@ -2664,7 +2664,7 @@ setTimeout(() => {
 
 ###### 83. Какой будет вывод?
 
-<section>
+```javascript
 const person = {
   name: "Lydia",
   age: 21
@@ -2674,7 +2674,7 @@ let city = person.city
 city = "Amsterdam"
 
 console.log(person)
-</section>
+```
 
 
 - A: { name: "Lydia", age: 21 }
@@ -2702,7 +2702,7 @@ console.log(person)
 
 ###### 84. Какой будет вывод?
 
-<section>
+```javascript
 function checkAge(age) {
   if (age <section 18) {
     const message = "Sorry, you're too young."
@@ -2714,7 +2714,7 @@ function checkAge(age) {
 }
 
 console.log(checkAge(21))
-</section>
+```
 
 
 - A: "Sorry, you're too young."
@@ -2736,11 +2736,11 @@ console.log(checkAge(21))
 
 ###### 85. Какая информация будетвыведена в лог?
 
-<section>
+```javascript
 fetch('https://www.website.com/api/user/1')
   .then(res => res.json())
   .then(res => console.log(res))
-</section>
+```
 
 
 - A: Результат метода fetch.
@@ -2762,11 +2762,11 @@ fetch('https://www.website.com/api/user/1')
 
 ###### 86. Какая опция позволяет установить hasName равным true, если вы не можете передатьtrue в качестве аргумента?
 
-<section>
+```javascript
 function getName(name) {
   const hasName = //
 }
-</section>
+```
 
 
 - A: !!name
@@ -2794,9 +2794,9 @@ name.length возвращает длину переданного аргуме�
 
 ###### 87. Какой будет вывод?
 
-<section>
+```javascript
 console.log("I want pizza"[0])
-</section>
+```
 
 
 - A: """
@@ -2820,13 +2820,13 @@ console.log("I want pizza"[0])
 
 ###### 88. Какой будет вывод?
 
-<section>
+```javascript
 function sum(num1, num2 = num1) {
   console.log(num1 + num2)
 }
 
 sum(10)
-</section>
+```
 
 
 - A: NaN
@@ -2850,7 +2850,7 @@ sum(10)
 
 ###### 89. Какой будет вывод?
 
-<section>
+```javascript
 // module.js
 export default () => "Hello world"
 export const name = "Lydia"
@@ -2859,7 +2859,7 @@ export const name = "Lydia"
 import * as data from "./module"
 
 console.log(data)
-</section>
+```
 
 
 - A: { default: function default(), name: "Lydia" }
@@ -2883,7 +2883,7 @@ console.log(data)
 
 ###### 90. Какой будет вывод?
 
-<section>
+```javascript
 class Person {
   constructor(name) {
     this.name = name
@@ -2892,7 +2892,7 @@ class Person {
 
 const member = new Person("John")
 console.log(typeof member)
-</section>
+```
 
 
 - A: "class"
@@ -2906,11 +2906,11 @@ console.log(typeof member)
 <span>
 Классы являются синтаксическим сахаром для конструкторов функций. Эквивалентом класса Person в качестве конструктора функции будет:
 
-<section>
+```javascript
 function Person() {
   this.name = name
 }
-</section>
+```
 
 Вызов конструктора функции с new приводит к созданию экземпляра Person, ключевое слово typeof возвращает "object" для экземпляра. typeof member возвращает "object".
 
@@ -2922,11 +2922,11 @@ function Person() {
 
 ###### 91. Какой будет вывод?
 
-<section>
+```javascript
 let newList = [1, 2, 3].push(4)
 
 console.log(newList.push(5))
-</section>
+```
 
 
 - A: [1, 2, 3, 4, 5]
@@ -2950,7 +2950,7 @@ console.log(newList.push(5))
 
 ###### 92. Какой будет вывод?
 
-<section>
+```javascript
 function giveLydiaPizza() {
   return "Here is pizza!"
 }
@@ -2959,7 +2959,7 @@ const giveLydiaChocolate = () => "Here's chocolate... now go hit the gym already
 
 console.log(giveLydiaPizza.prototype)
 console.log(giveLydiaChocolate.prototype)
-</section>
+```
 
 
 - A: { constructor: ...} { constructor: ...}
@@ -2981,7 +2981,7 @@ console.log(giveLydiaChocolate.prototype)
 
 ###### 93. Какой будет вывод?
 
-<section>
+```javascript
 const person = {
   name: "Lydia",
   age: 21
@@ -2990,7 +2990,7 @@ const person = {
 for (const [x, y] of Object.entries(person)) {
   console.log(x, y)
 }
-</section>
+```
 
 
 - A: name Lydia and age 21
@@ -3019,13 +3019,13 @@ Object.entries (person) возвращает массив вложенных м�
 
 ###### 94. Какой будет вывод?
 
-<section>
+```javascript
 function getItems(fruitList, ...args, favoriteFruit) {
   return [...fruitList, ...args, favoriteFruit]
 }
 
 getItems(["banana", "apple"], "pear", "orange")
-</section>
+```
 
 
 - A: ["banana", "apple", "pear", "orange"]
@@ -3039,13 +3039,13 @@ getItems(["banana", "apple"], "pear", "orange")
 <span>
 ... args - прочие параметры. Значение прочих параметров - это массив, содержащий все оставшиеся аргументы **и может быть передан только последним**! В этом примере прочие параметры были вторым аргументом. Это невозможно, и это приведет к синтаксической ошибке.
 
-<section>
+```javascript
 function getItems(fruitList, favoriteFruit, ...args) {
   return [...fruitList, ...args, favoriteFruit]
 }
 
 getItems(["banana", "apple"], "pear", "orange")
-</section>
+```
 
 Приведенный выше пример работает. Это возвращает массив [ 'banana', 'apple', 'orange', 'pear' ]
 </span>
@@ -3056,7 +3056,7 @@ getItems(["banana", "apple"], "pear", "orange")
 
 ###### 95. Какой будет вывод?
 
-<section>
+```javascript
 function nums(a, b) {
   if
   (a > b)
@@ -3069,7 +3069,7 @@ function nums(a, b) {
 
 console.log(nums(4, 2))
 console.log(nums(1, 2))
-</section>
+```
 
 
 - A: a is bigger, 6 and b is bigger, 3
@@ -3085,10 +3085,10 @@ console.log(nums(1, 2))
 
 Здесь мы написали инструкцию return и другое значение a + b в новой строке. Однако, поскольку это новая линия, движок не знает, что это на самом деле значение, которое мы хотели бы вернуть. Вместо этого он автоматически добавляет точку с запятой после return. Вы можете увидеть это как:
 
-<section>
+```javascript
   return;
   a + b
-</section>
+```
 
 Это означает, что a + b никогда не достигается, так как функция перестает выполняться после ключевого слова return. Если значение не возвращается, как здесь, функция возвращает значение undefined. Обратите внимание, что после операторов if / else автоматической вставки нет!
 
@@ -3100,7 +3100,7 @@ console.log(nums(1, 2))
 
 ###### 96. Какой будет вывод?
 
-<section>
+```javascript
 class Person {
   constructor() {
     this.name = "Lydia"
@@ -3115,7 +3115,7 @@ Person = class AnotherPerson {
 
 const member = new Person()
 console.log(member.name)
-</section>
+```
 
 
 - A: "Lydia"
@@ -3137,14 +3137,14 @@ console.log(member.name)
 
 ###### 97. Какой будет вывод?
 
-<section>
+```javascript
 const info = {
   [Symbol('a')]: 'b'
 }
 
 console.log(info)
 console.log(Object.keys(info))
-</section>
+```
 
 
 - A: {Symbol('a'): 'b'} and ["{Symbol('a')"]
@@ -3168,7 +3168,7 @@ Symbol не является перечисляемый. Метод Object.keys 
 
 ###### 98. Какой будет вывод?
 
-<section>
+```javascript
 const getList = ([x, ...y]) => [x, y]
 const getUser = user => { name: user.name, age: user.age }
 
@@ -3177,7 +3177,7 @@ const user = { name: "Lydia", age: 21 }
 
 console.log(getList(list))
 console.log(getUser(user))
-</section>
+```
 
 
 - A: [1, [2, 3, 4]] and undefined
@@ -3197,7 +3197,7 @@ console.log(getUser(user))
 
 Функция getUser получает объект. В случае функций со стрелками мы не можем писать фигурные скобки, если мы просто возвращаем одно значение. Однако, если вы хотите вернуть объект из стрелочной функции, вы должны написать его в скобках, в противном случае никакое значение не возвращается! Следующая функция вернула бы объект:
 
-</section>const getUser = user => ({ name: user.name, age: user.age })</section>
+```const getUser = user => ({ name: user.name, age: user.age })```
 
 Поскольку в этом случае значение не возвращается, функция возвращает значение undefined.
 
@@ -3209,11 +3209,11 @@ console.log(getUser(user))
 
 ###### 99. Какой будет вывод?
 
-<section>
+```javascript
 const name = "Lydia"
 
 console.log(name())
-</section>
+```
 
 
 - A: SyntaxError
@@ -3240,12 +3240,12 @@ ReferenceErrors генерируется, когда JavaScript не может 
 
 ###### 100. Какое значение будет на выходе?
 
-<section>
+```javascript
 // 🎉✨ This is my 100th question! ✨🎉
 
 const output = ${[] && 'Im'}possible!
 You should${'' && n't} see a therapist after so much JavaScript lol
-</section>
+```
 
 
 - A: possible! You should see a therapist after so much JavaScript lol
@@ -3269,13 +3269,13 @@ You should${'' && n't} see a therapist after so much JavaScript lol
 
 ###### 101. Какое значение будет на выходе?
 
-<section>
+```javascript
 const one = (false || {} || null)
 const two = (null || false || "")
 const three = ([] || 0 || true)
 
 console.log(one, two, three)
-</section>
+```
 
 
 - A: false null []
@@ -3303,7 +3303,7 @@ console.log(one, two, three)
 
 ###### 102. Какое значение будет на выходе?
 
-<section>
+```javascript
 const myPromise = () => Promise.resolve('I have resolved!')
 
 function firstFunction() {
@@ -3318,7 +3318,7 @@ async function secondFunction() {
 
 firstFunction()
 secondFunction()
-</section>
+```
 
 
 - A: I have resolved!, second and I have resolved!, second
@@ -3348,7 +3348,7 @@ secondFunction()
 
 ###### 103. Какое значение будет на выходе?
 
-<section>
+```javascript
 const set = new Set()
 
 set.add(1)
@@ -3358,7 +3358,7 @@ set.add({ name: "Lydia" })
 for (let item of set) {
   console.log(item + 2)
 }
-</section>
+```
 
 
 - A: 3, NaN, NaN
@@ -3386,9 +3386,9 @@ for (let item of set) {
 
 ###### 104. Чему равно значение?
 
-<section>
+```javascript
 Promise.resolve(5)
-</section>
+```
 
 
 - A: 5
@@ -3412,7 +3412,7 @@ Promise.resolve(5)
 
 ###### 105. Чему равно значение?
 
-<section>
+```javascript
 function compareMembers(person1, person2 = person) {
   if (person1 !== person2) {
     console.log("Not the same!")
@@ -3424,7 +3424,7 @@ function compareMembers(person1, person2 = person) {
 const person = { name: "Lydia" }
 
 compareMembers(person)
-</section>
+```
 
 
 - A: Not the same!
@@ -3452,7 +3452,7 @@ compareMembers(person)
 
 ###### 106. Чему равно значение?
 
-<section>
+```javascript
 const colorConfig = {
   red: true,
   blue: false,
@@ -3464,7 +3464,7 @@ const colorConfig = {
 const colors = ["pink", "red", "blue"]
 
 console.log(colorConfig.colors[1])
-</section>
+```
 
 
 - A: true
@@ -3490,9 +3490,9 @@ JavaScript интерпретирует (или распаковывает) оп
 
 ###### 107. Чему равно значение?
 
-<section>
+```javascript
 console.log('❤️' === '❤️')
-</section>
+```
 
 
 - A: true
@@ -3512,7 +3512,7 @@ console.log('❤️' === '❤️')
 
 ###### 108. Какой из этих методов модифицирует исходный массив?
 
-<section>
+```javascript
 const emojis = ['✨', '🥑', '😍']
 
 emojis.map(x => x + '✨')
@@ -3521,7 +3521,7 @@ emojis.find(x => x !== '🥑')
 emojis.reduce((acc, cur) => acc + '✨')
 emojis.slice(1, 2, '✨') 
 emojis.splice(1, 2, '✨')
-</section>
+```
 
 
 - A: All of them
@@ -3545,14 +3545,14 @@ map, filter и slice возвращают новый массив, find возв
 
 ###### <a name=20191009></a>109. Какое значение будет на выходе?
 
-<section>
+```javascript
 const food = ['🍕', '🍫', '🥑', '🍔']
 const info = { favoriteFood: food[0] }
 
 info.favoriteFood = '🍝'
 
 console.log(food)
-</section>
+```
 
 
 - A: ['🍕', '🍫', '🥑', '🍔']
@@ -3578,9 +3578,9 @@ console.log(food)
 
 ###### 110. Что делает этот метод?
 
-<section>
+```javascript
 JSON.parse()
-</section>
+```
 
 
 - A: Разбирает JSON в значение JavaScript
@@ -3594,7 +3594,7 @@ JSON.parse()
 <span>
 С помощью метода JSON.parse () мы можем разобрать строку JSON в значение JavaScript.
 
-<section>
+```javascript
 // Преобразование числа в допустимый JSON, затем преобразование строки JSON в значение JavaScript:
 const jsonNumber = JSON.stringify(4) // '4'
 JSON.parse(jsonNumber) // 4
@@ -3606,7 +3606,7 @@ JSON.parse(jsonArray) // [1, 2, 3]
 // Преобразование объекта в допустимый JSON, затем преобразование строки JSON в значение JavaScript:
 const jsonArray = JSON.stringify({ name: "Lydia" }) // '{"name":"Lydia"}'
 JSON.parse(jsonArray) // { name: 'Lydia' }
-</section>
+```
 
 </span>
 </div>
@@ -3616,7 +3616,7 @@ JSON.parse(jsonArray) // { name: 'Lydia' }
 
 ###### 111. Какое значение будет на выходе? 
 
-<section>
+```javascript
 let name = 'Lydia'
 
 function getName() {
@@ -3625,7 +3625,7 @@ function getName() {
 }
 
 getName()
-</section>
+```
 
 
 - A: Lydia
@@ -3643,7 +3643,7 @@ getName()
 
 Если бы мы не объявили переменную name в функции getName, движок javascript посмотрел бы вниз по цепочки области действия. Внешняя область имеет переменную с именем name со значением Lydia. В этом случае он бы записал Lydia.
 
-<section>
+```javascript
 let name = 'Lydia'
 
 function getName() {
@@ -3651,7 +3651,7 @@ function getName() {
 }
 
 getName() // Lydia
-</section>
+```
 
 </span>
 </div>
@@ -3661,7 +3661,7 @@ getName() // Lydia
 
 ###### 112. Какое значение будет на выходе?
 
-<section>
+```javascript
 function* generatorOne() {
   yield ['a', 'b', 'c'];
 }
@@ -3675,7 +3675,7 @@ const two = generatorTwo()
 
 console.log(one.next().value)
 console.log(two.next().value)
-</section>
+```
 
 
 - A: a and a
@@ -3691,19 +3691,19 @@ console.log(two.next().value)
 
 В generatorOne мы получаем весь массив ['a', 'b', 'c'], используя ключевое слово yield. Значение свойства value для объекта, возвращаемого методом next для one (one.next().value), равно всему массиву ['a', 'b', 'c'].
 
-<section>
+```javascript
 console.log(one.next().value) // ['a', 'b', 'c']
 console.log(one.next().value) // undefined
-</section>
+```
 
 В файле generatorTwo мы используем ключевое слово yield*. Это означает, что первое полученное значение two равно первому полученному значению в итераторе. Итератор - это массив ['a', 'b', 'c']. Первым полученным значением является a, поэтому в первый раз, когда мы вызываем two.next().value, возвращается a.
 
-<section>
+```javascript
 console.log(two.next().value) // 'a'
 console.log(two.next().value) // 'b'
 console.log(two.next().value) // 'c'
 console.log(two.next().value) // undefined
-</section>
+```
 
 </span>
 </div>
@@ -3713,9 +3713,9 @@ console.log(two.next().value) // undefined
 
 ###### 113. Какое значение будет на выходе?
 
-<section>
+```javascript
 console.log(${(x => x)('I love')} to program)
-</section>
+```
 
 
 - A: I love to program
@@ -3737,7 +3737,7 @@ console.log(${(x => x)('I love')} to program)
 
 ###### 114. Что произойдет?
 
-<section>
+```javascript
 let config = {
   alert: setInterval(() => {
     console.log('Alert!')
@@ -3745,7 +3745,7 @@ let config = {
 }
 
 config = null
-</section>
+```
 
 
 - A: обратный вызов setInterval не будет вызван
@@ -3767,7 +3767,7 @@ config = null
 
 ###### 115. Какие методы вернут значение 'Hello world!'?
 
-<section>
+```javascript
 const myMap = new Map()
 const myFunc = () => 'greeting'
 
@@ -3779,7 +3779,7 @@ myMap.get('greeting')
 myMap.get(myFunc)
 //3
 myMap.get(() => 'greeting')
-</section>
+```
 
 
 - A: 1
@@ -3804,7 +3804,7 @@ myMap.get(() => 'greeting')
 
 ###### 116. Какое значение будет на выходе?
 
-<section>
+```javascript
 const person = {
   name: "Lydia",
   age: 21
@@ -3820,7 +3820,7 @@ changeAge(person)
 changeAgeAndName()
 
 console.log(person)
-</section>
+```
 
 
 - A: {name: "Sarah", age: 22}
@@ -3846,11 +3846,11 @@ console.log(person)
 
 ###### <a name=20191118></a>117. Какой из следующих наборов параметров вернет 6?
 
-<section>
+```javascript
 function sumValues(x, y, z) {
 	return x + y + z;
 }
-</section>
+```
 
 
 - A: sumValues([...1, 2, 3])
@@ -3872,12 +3872,12 @@ function sumValues(x, y, z) {
 
 ###### 118. Что будет на выходе?
 
-<section>
+```javascript
 let num = 1;
 const list = ["🥳", "🤠", "🥰", "🤪"];
 
 console.log(list[(num += 1)]);
-</section>
+```
 
 
 - A: 🤠
@@ -3899,7 +3899,7 @@ console.log(list[(num += 1)]);
 
 ###### 119. Что будет на выходе?
 
-<section>
+```javascript
 const person = {
 	firstName: "Lydia",
 	lastName: "Hallie",
@@ -3916,7 +3916,7 @@ console.log(person.pet?.name);
 console.log(person.pet?.family?.name);
 console.log(person.getFullName?.());
 console.log(member.getLastName?.());
-</section>
+```
 
 
 - A: undefined undefined undefined undefined
@@ -3943,7 +3943,7 @@ member.getLastName?.(): member не определено: member.getLastName() �
 
 ###### 120. Что будет на выходе?
 
-<section>
+```javascript
 const groceries = ["banana", "apple", "peanuts"];
 
 if (groceries.indexOf("banana")) {
@@ -3951,7 +3951,7 @@ if (groceries.indexOf("banana")) {
 } else {
 	console.log(We don't have to buy bananas!);
 }
-</section>
+```
 
 
 - A: We have to buy bananas!
@@ -3973,7 +3973,7 @@ if (groceries.indexOf("banana")) {
 
 ###### 121. Что будет на выходе?
 
-<section>
+```javascript
 const config = {
 	languages: [],
 	set language(lang) {
@@ -3982,7 +3982,7 @@ const config = {
 };
 
 console.log(config.language);
-</section>
+```
 
 
 - A: function language(lang) { this.languages.push(lang }
@@ -4004,12 +4004,12 @@ console.log(config.language);
 
 ###### 122. Что будет на выходе?
 
-<section>
+```javascript
 const name = "Lydia Hallie";
 
 console.log(!typeof name === "object");
 console.log(!typeof name === "string");
-</section>
+```
 
 
 - A: false true
@@ -4033,14 +4033,14 @@ typeof name возвращает "строку". Строка "string" явля�
 
 ###### 123. Что будет на выходе?
 
-<section>
+```javascript
 const add = x => y => z => {
 	console.log(x, y, z);
 	return x + y + z;
 };
 
 add(4)(5)(6);
-</section>
+```
 
 
 - A: 4 5 6
@@ -4062,7 +4062,7 @@ add(4)(5)(6);
 
 ###### 124. Что будет на выходе?
 
-<section>
+```javascript
 async function* range(start, end) {
 	for (let i = start; i <= end; i++) {
 		yield Promise.resolve(i);
@@ -4075,7 +4075,7 @@ async function* range(start, end) {
 		console.log(item);
 	}
 })();
-</section>
+```
 
 
 - A: Promise {1} Promise {2} Promise {3}
@@ -4097,13 +4097,13 @@ async function* range(start, end) {
 
 ###### 125. Что будет на выходе?
 
-<section>
+```javascript
 const myFunc = ({ x, y, z }) => {
 	console.log(x, y, z);
 };
 
 myFunc(1, 2, 3);
-</section>
+```
 
 
 - A: 1 2 3
@@ -4125,7 +4125,7 @@ myFunc ожидает объект со свойствами x, y и z в кач
 
 ###### 126. Что будет на выходе?
 
-<section>
+```javascript
 function getFine(speed, amount) {
   const formattedSpeed = new Intl.NumberFormat({
     'en-US',
@@ -4141,7 +4141,7 @@ function getFine(speed, amount) {
 }
 
 console.log(getFine(130, 300))
-</section>
+```
 
 
 - A: The driver drove 130 and has to pay 300
@@ -4163,12 +4163,12 @@ console.log(getFine(130, 300))
 
 ###### 127. Что будет на выходе?
 
-<section>
+```javascript
 const spookyItems = ["👻", "🎃", "🕸"];
 ({ item: spookyItems[3] } = { item: "💀" });
 
 console.log(spookyItems);
-</section>
+```
 
 
 - A: ["👻", "🎃", "🕸"]
@@ -4190,7 +4190,7 @@ console.log(spookyItems);
 
 ###### 128. Что будет на выходе?
 
-<section>
+```javascript
 const name = "Lydia Hallie";
 const age = 21;
 
@@ -4199,7 +4199,7 @@ console.log(Number.isNaN(age));
 
 console.log(isNaN(name));
 console.log(isNaN(age));
-</section>
+```
 
 
 - A: true false true false
@@ -4223,7 +4223,7 @@ console.log(isNaN(age));
 
 ###### 129. Что будет на выходе?
 
-<section>
+```javascript
 const randomValue = 21;
 
 function getInfo() {
@@ -4232,7 +4232,7 @@ function getInfo() {
 }
 
 getInfo();
-</section>
+```
 
 
 - A: "number"
@@ -4254,7 +4254,7 @@ getInfo();
 
 ###### 130. Что будет на выходе?
 
-<section>
+```javascript
 const myPromise = Promise.resolve("Woah some cool data");
 
 (async () => {
@@ -4266,7 +4266,7 @@ const myPromise = Promise.resolve("Woah some cool data");
 		console.log("Oh finally!");
 	}
 })();
-</section>
+```
 
 
 - A: Woah some cool data
@@ -4288,11 +4288,11 @@ const myPromise = Promise.resolve("Woah some cool data");
 
 ###### 131. Что будет на выходе?
 
-<section>
+```javascript
 const emojis = ["🥑", ["✨", "✨", ["🍕", "🍕"]]];
 
 console.log(emojis.flat(1));
-</section>
+```
 
 
 - A: ['🥑', ['✨', '✨', ['🍕', '🍕']]]
@@ -4314,7 +4314,7 @@ console.log(emojis.flat(1));
 
 ###### 132. Что будет на выходе?
 
-<section>
+```javascript
 class Counter {
   constructor() {
     this.count = 0;
@@ -4333,7 +4333,7 @@ const counterTwo = counterOne;
 counterTwo.increment();
 
 console.log(counterOne.count);
-</section>
+```
 
 
 - A: 0
@@ -4363,7 +4363,7 @@ counterOne экземпляр класса Counter. Counter класс соде�
 
 ###### 133. Что будет на выходе?
 
-<section>
+```javascript
 const myPromise = Promise.resolve(Promise.resolve('Promise!'));
 
 function funcOne() {
@@ -4381,7 +4381,7 @@ async function funcTwo() {
 
 funcOne();
 funcTwo();
-</section>
+```
 
 
 - A: Promise! Last line! Promise! Last line! Last line! Promise!
@@ -4411,7 +4411,7 @@ funcTwo();
 
 ###### 134. Как мы можем вызвать функцию sum в sum.js из index.js?
 
-<section>
+```javascript
 // sum.js
 export default function sum(x) {
   return x + x;
@@ -4419,7 +4419,7 @@ export default function sum(x) {
 
 // index.js
 import * as sum from './sum';
-</section>
+```
 
 
 - A: sum(4)
@@ -4433,7 +4433,7 @@ import * as sum from './sum';
 <span>
 Используя звездочку *, мы импортируем все экспортируемые значения из файла, включая именнованные экспорты и экспорты по умолчанию. Если бы у нас был следующий файл:
 
-<section>
+```javascript
 // info.js
 export const name = 'Lydia';
 export const age = 21;
@@ -4442,23 +4442,23 @@ export default 'I love JavaScript';
 // index.js
 import * as info from './info';
 console.log(info);
-</section>
+```
 
 В лог попадёт следующее:
 
-<section>
+```javascript
 {
   default: "I love JavaScript",
   name: "Lydia",
   age: 21
 }
-</section>
+```
 
 Для примера sum это означает, что импортированное значение sum будет таким:
 
-<section>
+```javascript
 { default: function sum(x) { return x + x } }
-</section>
+```
 
 Следовательно, мы можем вызвать эту функцию используя sum.default
 
@@ -4470,7 +4470,7 @@ console.log(info);
 
 ###### 135. Что будет на выходе?
 
-<section>
+```javascript
 const handler = {
   set: () => console.log('Added a new property!'),
   get: () => console.log('Accessed a property!'),
@@ -4480,7 +4480,7 @@ const person = new Proxy({}, handler);
 
 person.name = 'Lydia';
 person.name;
-</section>
+```
 
 
 - A: Added a new property!
@@ -4508,11 +4508,11 @@ C помощью Proxy мы можем добавить собственное �
 
 ###### 136. Какое из перечисленных действий может модифицировать объект person?
 
-<section>
+```javascript
 const person = { name: 'Lydia Hallie' };
 
 Object.seal(person);
-</section>
+```
 
 
 - A: person.name = "Evan Bacon"
@@ -4536,7 +4536,7 @@ Object.seal(person);
 
 ###### 137. Какое из перечисленных действий может модифицировать объект person?
 
-<section>
+```javascript
 const person = {
   name: 'Lydia Hallie',
   address: {
@@ -4545,7 +4545,7 @@ const person = {
 };
 
 Object.freeze(person);
-</section>
+```
 
 
 - A: person.name = "Evan Bacon"
